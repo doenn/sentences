@@ -5,6 +5,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 import org.junit.jupiter.api.*;
 
 
+
 public class SentencesTest{
 
 	@Test
@@ -12,6 +13,10 @@ public class SentencesTest{
 	@Tag ("Smoke")
 	@Tag ("System")
 	public void parseSentence(){
+
+
+		Sentences sentences = new Sentences();
+		sentences.parseSentence(null);
 		assertEquals(2, 1+1);
 		System.out.println("Sentence parser test.");
 	}
