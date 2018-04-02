@@ -67,12 +67,15 @@ public class Sentences {
 			
 		}
 		Integer sentenceLength = (Integer)results.get("Length");
-		sentenceLength.valueOf(wordCount);
+		sentenceLength = Integer.valueOf(wordCount);
+		results.put("Length", sentenceLength);	
 
 		for (String longestWord : (ArrayList<String>)longestWords){
 			System.out.println("Longest word: " + longestWord);
 		}
 		System.out.println("Word count: " + wordCount);
+
+		
 
 		return results;
 	}
