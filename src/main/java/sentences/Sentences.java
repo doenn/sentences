@@ -46,11 +46,13 @@ public class Sentences {
 			wordCount++;
 
 
-			boolean sameLengthExists = ((ArrayList<String>)longestWords).stream().filter((String priorMatch)->{
-				return wordMatch.length() == priorMatch.length();
-			}).anyMatch((String sameLengthPriorMatch)->{
-				return !wordMatch.equalsIgnoreCase(sameLengthPriorMatch);	// Do not include new match when it already exists
-			});
+			boolean sameLengthExists = ((ArrayList<String>)longestWords).stream()
+							.filter((String priorMatch)->{
+								return wordMatch.length() == priorMatch.length();
+							 })
+							.anyMatch((String sameLengthPriorMatch)->{
+								return !wordMatch.equalsIgnoreCase(sameLengthPriorMatch);	// Do not include new match when it already exists
+							});
 
 			if (sameLengthExists){
 				longestWords.add(wordMatch);		// Append match to end of list

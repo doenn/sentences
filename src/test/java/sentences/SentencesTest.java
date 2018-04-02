@@ -14,6 +14,10 @@ import java.util.ArrayList;
 import java.util.List;
 
 
+import java.util.regex.Pattern;
+import java.util.regex.Matcher;
+
+
 public class SentencesTest{
 
 	@ParameterizedTest
@@ -25,19 +29,39 @@ public class SentencesTest{
 		Map<String, Object> results;
 
 
+		Pattern expectedWordPattern = Pattern.compile("(\\s)?+(.+)(\\s)?+");		// Tokenize by spaces
+		Matcher expectedWordMatcher = expectedWordPattern.matcher(longestWord);
+
+
+		List expectedLongestWords = new ArrayList<String>();
+
+		while (expectedWordMatcher.find()){		// Parse expectedLongestWords arguments into ArrayList
+			String expectedWordMatch = expectedWordMatcher.group(2);			
+			expectedLongestWords.add(expectedWordMatch);
+		}
+	
+
 		Sentences sentences = new Sentences();
 		results = sentences.parseSentence(sentence);
 
+
 		Integer sentenceLength = (Integer)results.get("Length");
 		List longestWords = (ArrayList<?>)results.get("Longest Words");
-		boolean sameWords = ((ArrayList<String>)longestWords).stream().filter((String returnedWord)->{
-			return longestWord.equals(returnedWord);
-		}).allMatch((String sameReturnedWord)->{
-			return longestWord.equals(sameReturnedWord);
-		});
+
+		assertEquals(longestWords.size(), expectedLongestWords.size());
+
+		for (String expectedWord :  (ArrayList<String>)expectedLongestWords){
+
+			long sameWordCount = ((ArrayList<String>)longestWords).stream()
+						.filter((String returnedWord)->{
+							return expectedWord.equals(returnedWord);
+						})
+						.count();
+			assertEquals(sameWordCount, 1);					// Only one match, no more.
+		}
+		
 
 		assertEquals(sentenceLength, Integer.valueOf(expectedLength));
-		assertEquals(sameWords, true);
 	}
 
 	@Nested
