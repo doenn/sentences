@@ -1,6 +1,8 @@
 package sentences;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertNotEquals;
+
 
 import org.junit.jupiter.api.*;
 import org.junit.jupiter.params.ParameterizedTest;
@@ -22,7 +24,7 @@ public class SentencesTest{
 
 
 	@Nested
-	public class wordTests{
+	public class WordTests{
 
 		@ParameterizedTest
 		@CsvFileSource(resources = "/Word/Case-Sentitivity/Verify words are matched regardless of case.csv") 
@@ -119,7 +121,7 @@ public class SentencesTest{
 	}
 
 	@Nested
-	public class spacesTests{
+	public class SpacesTests{
 
 		@ParameterizedTest
 		@CsvFileSource(resources = "/Spaces/Spaces/Verify any number of spaces between words will not affect matching.csv") 
@@ -164,6 +166,66 @@ public class SentencesTest{
 		
 
 			assertEquals(sentenceLength, Integer.valueOf(expectedLength));
+		}
+
+	}
+
+	@Nested
+	public class PunctuationTests{
+
+		@Nested
+		public class PeriodsTests{
+	
+			@ParameterizedTest
+			@CsvFileSource(resources = "/Punctuation/Periods/Verify a sentence period is not included as the longest word.csv") 
+			@DisplayName ("Verify a sentence period is not included as the longest wordg")
+			@Tag ("Unit")
+			public void periodsNotIncludedTest(String sentence, int expectedLength, String longestWord){		
+
+				Map<String, Object> results;
+
+
+				Pattern expectedWordPattern = Pattern.compile("([^\\s]+)(\\s)?");		// Tokenize by spaces
+				Matcher expectedWordMatcher = expectedWordPattern.matcher(longestWord);
+
+
+				List expectedLongestWords = new ArrayList<String>();
+
+				while (expectedWordMatcher.find()){		// Parse expectedLongestWords arguments into ArrayList
+					String expectedWordMatch = expectedWordMatcher.group(1);
+					expectedLongestWords.add(expectedWordMatch);
+				}
+	
+
+				Sentences sentences = new Sentences();
+				results = sentences.parseSentence(sentence);
+
+
+				Integer sentenceLength = (Integer)results.get("Length");
+				List longestWords = (ArrayList<?>)results.get("Longest Words");
+				
+				String periodChar = ".";
+	
+				for (String actualLongestWord : (ArrayList<String>)longestWords){
+					assertNotEquals(actualLongestWord.contains(periodChar), true);		// Longest words do not contain periods
+				}
+
+				assertEquals(longestWords.size(), expectedLongestWords.size());
+
+				for (String expectedWord :  (ArrayList<String>)expectedLongestWords){
+
+					long sameWordCount = ((ArrayList<String>)longestWords).stream()
+								.filter((String returnedWord)->{
+									return expectedWord.equals(returnedWord);
+								})
+								.count();
+					assertEquals(sameWordCount, 1);					// Only one match, no more.
+				}
+		
+
+				assertEquals(sentenceLength, Integer.valueOf(expectedLength));
+			}
+
 		}
 
 	}

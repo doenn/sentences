@@ -1,1 +1,1 @@
-typeSearchIndex = [{"p":"sentences","l":"Main"},{"p":"sentences","l":"Sentences"},{"p":"sentences","l":"SentencesTest"},{"p":"sentences","l":"SentencesTest.spacesTests"},{"p":"sentences","l":"SentencesTest.wordTests"}]
+typeSearchIndex = [{"p":"sentences","l":"Main"},{"p":"sentences","l":"Sentences"},{"p":"sentences","l":"SentencesTest"},{"p":"sentences","l":"SentencesTest.PunctuationTests"},{"p":"sentences","l":"SentencesTest.PunctuationTests.PeriodsTests"},{"p":"sentences","l":"SentencesTest.SpacesTests"},{"p":"sentences","l":"SentencesTest.WordTests"}]
