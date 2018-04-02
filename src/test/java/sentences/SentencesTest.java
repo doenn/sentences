@@ -455,6 +455,146 @@ public class SentencesTest{
 
 				assertEquals(sentenceLength, Integer.valueOf(expectedLength));
 			}
+	
+			@ParameterizedTest
+			@CsvFileSource(resources = "/Punctuation/Commas ellipses/Verify words are matched even when they are followed by ellipses.csv") 
+			@DisplayName ("Verify words are matched even when they are followed by ellipses")
+			@Tag ("Unit")
+			public void matchFollowedByEllipsesTest(String sentence, int expectedLength, String longestWord){		
+
+				Map<String, Object> results;
+
+
+				Pattern expectedWordPattern = Pattern.compile("([^\\s]+)(\\s)?");		// Tokenize by spaces
+				Matcher expectedWordMatcher = expectedWordPattern.matcher(longestWord);
+
+
+				List expectedLongestWords = new ArrayList<String>();
+
+				while (expectedWordMatcher.find()){		// Parse expectedLongestWords arguments into ArrayList
+					String expectedWordMatch = expectedWordMatcher.group(1);
+					expectedLongestWords.add(expectedWordMatch);
+				}
+	
+
+				Sentences sentences = new Sentences();
+				results = sentences.parseSentence(sentence);
+
+
+				Integer sentenceLength = (Integer)results.get("Length");
+				List longestWords = (ArrayList<?>)results.get("Longest Words");
+				
+
+				assertEquals(longestWords.size(), expectedLongestWords.size());
+
+				for (String expectedWord :  (ArrayList<String>)expectedLongestWords){
+
+					long sameWordCount = ((ArrayList<String>)longestWords).stream()
+								.filter((String returnedWord)->{
+									return expectedWord.equals(returnedWord);
+								})
+								.count();
+					assertEquals(sameWordCount, 1);					// Only one match, no more.
+				}
+		
+
+				assertEquals(sentenceLength, Integer.valueOf(expectedLength));
+			}
+
+			@ParameterizedTest
+			@CsvFileSource(resources = "/Punctuation/Commas ellipses/Verify words are matched even when they are preceded by ellipses.csv") 
+			@DisplayName ("Verify words are matched even when they are preceded by ellipses")
+			@Tag ("Unit")
+			public void matchPrecededByEllipsesTest(String sentence, int expectedLength, String longestWord){		
+
+				Map<String, Object> results;
+
+
+				Pattern expectedWordPattern = Pattern.compile("([^\\s]+)(\\s)?");		// Tokenize by spaces
+				Matcher expectedWordMatcher = expectedWordPattern.matcher(longestWord);
+
+
+				List expectedLongestWords = new ArrayList<String>();
+
+				while (expectedWordMatcher.find()){		// Parse expectedLongestWords arguments into ArrayList
+					String expectedWordMatch = expectedWordMatcher.group(1);
+					expectedLongestWords.add(expectedWordMatch);
+				}
+	
+
+				Sentences sentences = new Sentences();
+				results = sentences.parseSentence(sentence);
+
+
+				Integer sentenceLength = (Integer)results.get("Length");
+				List longestWords = (ArrayList<?>)results.get("Longest Words");
+			
+
+				assertEquals(longestWords.size(), expectedLongestWords.size());
+
+				for (String expectedWord :  (ArrayList<String>)expectedLongestWords){
+
+					long sameWordCount = ((ArrayList<String>)longestWords).stream()
+								.filter((String returnedWord)->{
+									return expectedWord.equals(returnedWord);
+								})
+								.count();
+					assertEquals(sameWordCount, 1);					// Only one match, no more.
+				}
+		
+
+				assertEquals(sentenceLength, Integer.valueOf(expectedLength));
+			}
+
+			@ParameterizedTest
+			@CsvFileSource(resources = "/Punctuation/Commas ellipses/Verify words are matched when followed by ellipses but the ellipses are not matched.csv") 
+			@DisplayName ("Verify words are matched when followed by ellipses but the ellipses are not matched")
+			@Tag ("Unit")
+			public void ellipsesNotIncludedTest(String sentence, int expectedLength, String longestWord){		
+
+				Map<String, Object> results;
+
+
+				Pattern expectedWordPattern = Pattern.compile("([^\\s]+)(\\s)?");		// Tokenize by spaces
+				Matcher expectedWordMatcher = expectedWordPattern.matcher(longestWord);
+
+
+				List expectedLongestWords = new ArrayList<String>();
+
+				while (expectedWordMatcher.find()){		// Parse expectedLongestWords arguments into ArrayList
+					String expectedWordMatch = expectedWordMatcher.group(1);
+					expectedLongestWords.add(expectedWordMatch);
+				}
+	
+
+				Sentences sentences = new Sentences();
+				results = sentences.parseSentence(sentence);
+
+
+				Integer sentenceLength = (Integer)results.get("Length");
+				List longestWords = (ArrayList<?>)results.get("Longest Words");
+				
+				String ellipsesString = "...";
+	
+				for (String actualLongestWord : (ArrayList<String>)longestWords){
+					assertNotEquals(actualLongestWord.contains(ellipsesString), true);		// Longest words do not contain periods
+				}
+
+				assertEquals(longestWords.size(), expectedLongestWords.size());
+
+				for (String expectedWord :  (ArrayList<String>)expectedLongestWords){
+
+					long sameWordCount = ((ArrayList<String>)longestWords).stream()
+								.filter((String returnedWord)->{
+									return expectedWord.equals(returnedWord);
+								})
+								.count();
+					assertEquals(sameWordCount, 1);					// Only one match, no more.
+				}
+		
+
+				assertEquals(sentenceLength, Integer.valueOf(expectedLength));
+			}
 
 
 		}
