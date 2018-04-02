@@ -20,60 +20,154 @@ import java.util.regex.Matcher;
 
 public class SentencesTest{
 
-	@ParameterizedTest
-	@CsvFileSource(resources = "/InputData.csv") 
-	@DisplayName ("Verify words are matched regardless of case.")
-	@Tag ("System")
-	public void parseSentence(String sentence, int expectedLength, String longestWord){
 
-		Map<String, Object> results;
+	@Nested
+	public class wordTests{
+
+		@ParameterizedTest
+		@CsvFileSource(resources = "/Word/Case-Sentitivity/Verify words are matched regardless of case.csv") 
+		@DisplayName ("Verify words are matched regardless of case.")
+		@Tag ("Unit")
+		public void matchAnyCaseTest(String sentence, int expectedLength, String longestWord){
+
+			Map<String, Object> results;
 
 
-		Pattern expectedWordPattern = Pattern.compile("(\\s)?+(.+)(\\s)?+");		// Tokenize by spaces
-		Matcher expectedWordMatcher = expectedWordPattern.matcher(longestWord);
+			Pattern expectedWordPattern = Pattern.compile("([^\\s]+)(\\s)?");		// Tokenize by spaces
+			Matcher expectedWordMatcher = expectedWordPattern.matcher(longestWord);
 
 
-		List expectedLongestWords = new ArrayList<String>();
+			List expectedLongestWords = new ArrayList<String>();
 
-		while (expectedWordMatcher.find()){		// Parse expectedLongestWords arguments into ArrayList
-			String expectedWordMatch = expectedWordMatcher.group(2);			
-			expectedLongestWords.add(expectedWordMatch);
-		}
+			while (expectedWordMatcher.find()){		// Parse expectedLongestWords arguments into ArrayList
+				String expectedWordMatch = expectedWordMatcher.group(1);			
+				expectedLongestWords.add(expectedWordMatch);
+			}
 	
 
-		Sentences sentences = new Sentences();
-		results = sentences.parseSentence(sentence);
+			Sentences sentences = new Sentences();
+			results = sentences.parseSentence(sentence);
 
 
-		Integer sentenceLength = (Integer)results.get("Length");
-		List longestWords = (ArrayList<?>)results.get("Longest Words");
+			Integer sentenceLength = (Integer)results.get("Length");
+			List longestWords = (ArrayList<?>)results.get("Longest Words");
 
-		assertEquals(longestWords.size(), expectedLongestWords.size());
+			assertEquals(longestWords.size(), expectedLongestWords.size());
 
-		for (String expectedWord :  (ArrayList<String>)expectedLongestWords){
+			for (String expectedWord :  (ArrayList<String>)expectedLongestWords){
 
-			long sameWordCount = ((ArrayList<String>)longestWords).stream()
-						.filter((String returnedWord)->{
-							return expectedWord.equals(returnedWord);
-						})
-						.count();
-			assertEquals(sameWordCount, 1);					// Only one match, no more.
-		}
+				long sameWordCount = ((ArrayList<String>)longestWords).stream()
+							.filter((String returnedWord)->{
+								return expectedWord.equals(returnedWord);
+							})
+							.count();
+				assertEquals(sameWordCount, 1);					// Only one match, no more.
+			}
 		
 
-		assertEquals(sentenceLength, Integer.valueOf(expectedLength));
+			assertEquals(sentenceLength, Integer.valueOf(expectedLength));
+		}
+
+		@ParameterizedTest
+		@CsvFileSource(resources = "/Word/Case-Sentitivity/Verify words in capital letters only are matched.csv") 
+		@DisplayName ("Verify words in capital letters only are matched")
+		@Tag ("Unit")
+		public void matchOnlyCapsTest(String sentence, int expectedLength, String longestWord){
+
+			Map<String, Object> results;
+
+
+			Pattern expectedWordPattern = Pattern.compile("([^\\s]+)(\\s)?");		// Tokenize by spaces
+			Matcher expectedWordMatcher = expectedWordPattern.matcher(longestWord);
+
+
+			List expectedLongestWords = new ArrayList<String>();
+
+			while (expectedWordMatcher.find()){		// Parse expectedLongestWords arguments into ArrayList
+				String expectedWordMatch = expectedWordMatcher.group(1);
+				expectedLongestWords.add(expectedWordMatch);
+			}
+	
+
+			Sentences sentences = new Sentences();
+			results = sentences.parseSentence(sentence);
+
+
+			Integer sentenceLength = (Integer)results.get("Length");
+			List longestWords = (ArrayList<?>)results.get("Longest Words");
+
+			for (String actualWord : (ArrayList<String>)longestWords){
+				System.out.println("Actual: " + actualWord);
+			}
+
+			assertEquals(longestWords.size(), expectedLongestWords.size());
+
+			for (String expectedWord :  (ArrayList<String>)expectedLongestWords){
+
+				long sameWordCount = ((ArrayList<String>)longestWords).stream()
+							.filter((String returnedWord)->{
+								return expectedWord.equals(returnedWord);
+							})
+							.count();
+				assertEquals(sameWordCount, 1);					// Only one match, no more.
+			}
+		
+
+			assertEquals(sentenceLength, Integer.valueOf(expectedLength));
+		}
+
 	}
 
 	@Nested
-	public class SentencesNestedTest{
+	public class spacesTests{
 
-		@Test
-		@DisplayName ("Verify 2+1 = 3")
-		@Tag ("System")
-		public void parseSentenceNested(){
-			assertEquals(3, 2+1);
-			System.out.println("Sentence parser nested test.");
+		@ParameterizedTest
+		@CsvFileSource(resources = "/Spaces/Spaces/Verify any number of spaces between words will not affect matching.csv") 
+		@DisplayName ("Verify any number of spaces between words will not affect matching")
+		@Tag ("Unit")
+		public void variableSpaceCountTest(String sentence, int expectedLength, String longestWord){		
+
+			Map<String, Object> results;
+
+
+			Pattern expectedWordPattern = Pattern.compile("([^\\s]+)(\\s)?");		// Tokenize by spaces
+			Matcher expectedWordMatcher = expectedWordPattern.matcher(longestWord);
+
+
+			List expectedLongestWords = new ArrayList<String>();
+
+			while (expectedWordMatcher.find()){		// Parse expectedLongestWords arguments into ArrayList
+				String expectedWordMatch = expectedWordMatcher.group(1);
+				expectedLongestWords.add(expectedWordMatch);
+			}
+	
+
+			Sentences sentences = new Sentences();
+			results = sentences.parseSentence(sentence);
+
+
+			Integer sentenceLength = (Integer)results.get("Length");
+			List longestWords = (ArrayList<?>)results.get("Longest Words");
+
+
+			assertEquals(longestWords.size(), expectedLongestWords.size());
+
+			for (String expectedWord :  (ArrayList<String>)expectedLongestWords){
+
+				long sameWordCount = ((ArrayList<String>)longestWords).stream()
+							.filter((String returnedWord)->{
+								return expectedWord.equals(returnedWord);
+							})
+							.count();
+				assertEquals(sameWordCount, 1);					// Only one match, no more.
+			}
+		
+
+			assertEquals(sentenceLength, Integer.valueOf(expectedLength));
 		}
+
 	}
+
+
 
 }

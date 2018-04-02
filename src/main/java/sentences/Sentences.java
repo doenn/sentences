@@ -68,6 +68,7 @@ public class Sentences {
 			}
 			
 		}
+
 		Integer sentenceLength = (Integer)results.get("Length");
 		sentenceLength = Integer.valueOf(wordCount);
 		results.put("Length", sentenceLength);	
