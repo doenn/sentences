@@ -9,3 +9,5 @@ The **Sentences** parser was written in Java 10 and unit tests were written with
 **Sentences** should compile and execute on most Java 10-compliant systems, but build and test scripts have currently been written on:
 
 * Windows
+* Linux (Tested on OpenSUSE)
+* Mac (Untested)

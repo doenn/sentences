@@ -16,7 +16,7 @@ public class SentencesTest{
 
 
 		Sentences sentences = new Sentences();
-		sentences.parseSentence(null);
+		sentences.parseSentence("I used to visit the lake.");
 		assertEquals(2, 1+1);
 		System.out.println("Sentence parser test.");
 	}
