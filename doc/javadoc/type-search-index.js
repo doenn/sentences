@@ -1,1 +1,1 @@
-typeSearchIndex = [{"p":"sentences","l":"Main"},{"p":"sentences","l":"Sentences"},{"p":"sentences","l":"SentencesTest"},{"p":"sentences","l":"SentencesTest.SentencesNestedTest"}]
+typeSearchIndex = [{"p":"sentences","l":"Main"},{"p":"sentences","l":"Sentences"},{"p":"sentences","l":"SentencesTest"},{"p":"sentences","l":"SentencesTest.spacesTests"},{"p":"sentences","l":"SentencesTest.wordTests"}]
