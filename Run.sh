@@ -1,5 +1,5 @@
 #!/bin/bash
 cd src/main/java
-java -cp sentences:. sentences.Main
+java -cp sentences:../../../junit-platform-console-standalone-1.1.0.jar:../../test/resources:../../test/java/sentences:. sentences.Main
 cd ../../../
 
