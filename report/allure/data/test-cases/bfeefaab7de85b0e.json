@@ -1,10 +1,10 @@
 {
-  "uid" : "db921063b6fbc1e5",
-  "name" : "matchAnyCaseTest(String, int, String)[1]",
-  "historyId" : "JUnit Jupiter:sentences.SentencesTest$WordTests#matchAnyCaseTest(String, int, String)[1]",
+  "uid" : "bfeefaab7de85b0e",
+  "name" : "numbersIncludedTest(String, int, String)[3]",
+  "historyId" : "JUnit Jupiter:sentences.SentencesTest$NumbersTests#numbersIncludedTest(String, int, String)[3]",
   "time" : {
-    "start" : 1522723431,
-    "stop" : 1522723431,
+    "start" : 1522747582,
+    "stop" : 1522747582,
     "duration" : 0
   },
   "status" : "passed",
@@ -22,10 +22,10 @@
     "value" : "PC"
   }, {
     "name" : "testClass",
-    "value" : "sentences.SentencesTest$WordTests"
+    "value" : "sentences.SentencesTest$NumbersTests"
   }, {
     "name" : "package",
-    "value" : "sentences.SentencesTest$WordTests"
+    "value" : "sentences.SentencesTest$NumbersTests"
   } ],
   "parameters" : [ ],
   "links" : [ ],
@@ -37,6 +37,6 @@
     "categories" : [ ],
     "tags" : [ ]
   },
-  "source" : "db921063b6fbc1e5.json",
+  "source" : "bfeefaab7de85b0e.json",
   "parameterValues" : [ ]
 }

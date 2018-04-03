@@ -1,0 +1,42 @@
+{
+  "uid" : "963a9fb6a42ddb0b",
+  "name" : "noCharactersTest()",
+  "historyId" : "JUnit Jupiter:sentences.SentencesTest$LengthTests$NoCharactersTests#noCharactersTest()",
+  "time" : {
+    "start" : 1522747582,
+    "stop" : 1522747582,
+    "duration" : 0
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "resultFormat",
+    "value" : "junit"
+  }, {
+    "name" : "suite",
+    "value" : "JUnit Jupiter"
+  }, {
+    "name" : "host",
+    "value" : "PC"
+  }, {
+    "name" : "testClass",
+    "value" : "sentences.SentencesTest$LengthTests$NoCharactersTests"
+  }, {
+    "name" : "package",
+    "value" : "sentences.SentencesTest$LengthTests$NoCharactersTests"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "963a9fb6a42ddb0b.json",
+  "parameterValues" : [ ]
+}

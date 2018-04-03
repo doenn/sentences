@@ -1,11 +1,11 @@
 {
-  "uid" : "19235f2a12cb71f0",
-  "name" : "wordsMatchedWithCommasMultipleMatchTest()",
-  "historyId" : "JUnit Jupiter:sentences.SentencesTest$PunctuationTests$CommasEllipsesTests#wordsMatchedWithCommasMultipleMatchTest()",
+  "uid" : "a05b963965544b3d",
+  "name" : "matchOnlyCapsTest(String, int, String)[1]",
+  "historyId" : "JUnit Jupiter:sentences.SentencesTest$WordTests#matchOnlyCapsTest(String, int, String)[1]",
   "time" : {
-    "start" : 1522723431,
-    "stop" : 1522723431,
-    "duration" : 0
+    "start" : 1522747582,
+    "stop" : 1522747597,
+    "duration" : 15
   },
   "status" : "passed",
   "flaky" : false,
@@ -22,10 +22,10 @@
     "value" : "PC"
   }, {
     "name" : "testClass",
-    "value" : "sentences.SentencesTest$PunctuationTests$CommasEllipsesTests"
+    "value" : "sentences.SentencesTest$WordTests"
   }, {
     "name" : "package",
-    "value" : "sentences.SentencesTest$PunctuationTests$CommasEllipsesTests"
+    "value" : "sentences.SentencesTest$WordTests"
   } ],
   "parameters" : [ ],
   "links" : [ ],
@@ -37,6 +37,6 @@
     "categories" : [ ],
     "tags" : [ ]
   },
-  "source" : "19235f2a12cb71f0.json",
+  "source" : "a05b963965544b3d.json",
   "parameterValues" : [ ]
 }

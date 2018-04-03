@@ -1,10 +1,10 @@
 {
-  "uid" : "a1fc70a65523a351",
-  "name" : "periodsNotIncludedTest(String, int, String)[1]",
-  "historyId" : "JUnit Jupiter:sentences.SentencesTest$PunctuationTests$PeriodsTests#periodsNotIncludedTest(String, int, String)[1]",
+  "uid" : "240b068a40c94a25",
+  "name" : "multipleSentenceExceptionTest(String, int, String)[2]",
+  "historyId" : "JUnit Jupiter:sentences.SentencesTest$SentenceTests$MultipleSentenceTests#multipleSentenceExceptionTest(String, int, String)[2]",
   "time" : {
-    "start" : 1522723431,
-    "stop" : 1522723431,
+    "start" : 1522747582,
+    "stop" : 1522747582,
     "duration" : 0
   },
   "status" : "passed",
@@ -22,10 +22,10 @@
     "value" : "PC"
   }, {
     "name" : "testClass",
-    "value" : "sentences.SentencesTest$PunctuationTests$PeriodsTests"
+    "value" : "sentences.SentencesTest$SentenceTests$MultipleSentenceTests"
   }, {
     "name" : "package",
-    "value" : "sentences.SentencesTest$PunctuationTests$PeriodsTests"
+    "value" : "sentences.SentencesTest$SentenceTests$MultipleSentenceTests"
   } ],
   "parameters" : [ ],
   "links" : [ ],
@@ -37,6 +37,6 @@
     "categories" : [ ],
     "tags" : [ ]
   },
-  "source" : "a1fc70a65523a351.json",
+  "source" : "240b068a40c94a25.json",
   "parameterValues" : [ ]
 }

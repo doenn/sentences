@@ -1,0 +1,42 @@
+{
+  "uid" : "fd61f555d85333df",
+  "name" : "ansiSupportedMatchTest(String, int, String)[1]",
+  "historyId" : "JUnit Jupiter:sentences.SentencesTest$CharacterSetTests$ANSITests#ansiSupportedMatchTest(String, int, String)[1]",
+  "time" : {
+    "start" : 1522747582,
+    "stop" : 1522747619,
+    "duration" : 37
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "resultFormat",
+    "value" : "junit"
+  }, {
+    "name" : "suite",
+    "value" : "JUnit Jupiter"
+  }, {
+    "name" : "host",
+    "value" : "PC"
+  }, {
+    "name" : "testClass",
+    "value" : "sentences.SentencesTest$CharacterSetTests$ANSITests"
+  }, {
+    "name" : "package",
+    "value" : "sentences.SentencesTest$CharacterSetTests$ANSITests"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "fd61f555d85333df.json",
+  "parameterValues" : [ ]
+}

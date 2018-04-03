@@ -1,10 +1,10 @@
 {
-  "uid" : "29ab9271f26b8ec7",
+  "uid" : "e2b7af9285a7a056",
   "name" : "variableSpaceCountTest(String, int, String)[2]",
   "historyId" : "JUnit Jupiter:sentences.SentencesTest$SpacesTests#variableSpaceCountTest(String, int, String)[2]",
   "time" : {
-    "start" : 1522723431,
-    "stop" : 1522723431,
+    "start" : 1522747582,
+    "stop" : 1522747582,
     "duration" : 0
   },
   "status" : "passed",
@@ -37,6 +37,6 @@
     "categories" : [ ],
     "tags" : [ ]
   },
-  "source" : "29ab9271f26b8ec7.json",
+  "source" : "e2b7af9285a7a056.json",
   "parameterValues" : [ ]
 }

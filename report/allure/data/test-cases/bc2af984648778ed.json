@@ -1,10 +1,10 @@
 {
-  "uid" : "cc82887cbe28195b",
-  "name" : "ellipsesNotIncludedTest(String, int, String)[1]",
-  "historyId" : "JUnit Jupiter:sentences.SentencesTest$PunctuationTests$CommasEllipsesTests#ellipsesNotIncludedTest(String, int, String)[1]",
+  "uid" : "bc2af984648778ed",
+  "name" : "noSentencePunctuationMatchTest(String, int, String)[1]",
+  "historyId" : "JUnit Jupiter:sentences.SentencesTest$SentenceTests$NoSentencePunctuationTests#noSentencePunctuationMatchTest(String, int, String)[1]",
   "time" : {
-    "start" : 1522723431,
-    "stop" : 1522723431,
+    "start" : 1522747582,
+    "stop" : 1522747582,
     "duration" : 0
   },
   "status" : "passed",
@@ -22,10 +22,10 @@
     "value" : "PC"
   }, {
     "name" : "testClass",
-    "value" : "sentences.SentencesTest$PunctuationTests$CommasEllipsesTests"
+    "value" : "sentences.SentencesTest$SentenceTests$NoSentencePunctuationTests"
   }, {
     "name" : "package",
-    "value" : "sentences.SentencesTest$PunctuationTests$CommasEllipsesTests"
+    "value" : "sentences.SentencesTest$SentenceTests$NoSentencePunctuationTests"
   } ],
   "parameters" : [ ],
   "links" : [ ],
@@ -37,6 +37,6 @@
     "categories" : [ ],
     "tags" : [ ]
   },
-  "source" : "cc82887cbe28195b.json",
+  "source" : "bc2af984648778ed.json",
   "parameterValues" : [ ]
 }

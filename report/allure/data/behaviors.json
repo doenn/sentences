@@ -2,278 +2,362 @@
   "uid" : "b1a8273437954620fa374b796ffaacdd",
   "name" : "behaviors",
   "children" : [ {
-    "name" : "matchPrecededByEllipsesTest(String, int, String)[1]",
-    "uid" : "52306e311c88fe3a",
+    "name" : "singleSentenceMatchTest(String, int, String)[1]",
+    "uid" : "283ce2aacef1eee0",
     "parentUid" : "b1a8273437954620fa374b796ffaacdd",
     "status" : "passed",
     "time" : {
-      "start" : 1522723431,
-      "stop" : 1522723431,
+      "start" : 1522747582,
+      "stop" : 1522747582,
+      "duration" : 0
+    },
+    "flaky" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "noSentencePunctuationMatchTest(String, int, String)[3]",
+    "uid" : "bee09f8342c7611f",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1522747582,
+      "stop" : 1522747582,
+      "duration" : 0
+    },
+    "flaky" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "ansiSupportedMatchTest(String, int, String)[2]",
+    "uid" : "1756744a807030dd",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1522747582,
+      "stop" : 1522747582,
       "duration" : 0
     },
     "flaky" : false,
     "parameters" : [ ]
   }, {
     "name" : "multipleSentenceExceptionTest(String, int, String)[2]",
-    "uid" : "57c8d16b5e7ca99b",
+    "uid" : "240b068a40c94a25",
     "parentUid" : "b1a8273437954620fa374b796ffaacdd",
     "status" : "passed",
     "time" : {
-      "start" : 1522723431,
-      "stop" : 1522723431,
-      "duration" : 0
-    },
-    "flaky" : false,
-    "parameters" : [ ]
-  }, {
-    "name" : "wordsMatchedWithCommasOneMatchTest()",
-    "uid" : "7409dc876eb865f0",
-    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
-    "status" : "passed",
-    "time" : {
-      "start" : 1522723431,
-      "stop" : 1522723431,
-      "duration" : 0
-    },
-    "flaky" : false,
-    "parameters" : [ ]
-  }, {
-    "name" : "commasNotIncludedOneMatchTest()",
-    "uid" : "c6bc546cf0feb612",
-    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
-    "status" : "passed",
-    "time" : {
-      "start" : 1522723431,
-      "stop" : 1522723431,
-      "duration" : 0
-    },
-    "flaky" : false,
-    "parameters" : [ ]
-  }, {
-    "name" : "variableSpaceCountTest(String, int, String)[2]",
-    "uid" : "29ab9271f26b8ec7",
-    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
-    "status" : "passed",
-    "time" : {
-      "start" : 1522723431,
-      "stop" : 1522723431,
-      "duration" : 0
-    },
-    "flaky" : false,
-    "parameters" : [ ]
-  }, {
-    "name" : "matchOnlyCapsTest(String, int, String)[1]",
-    "uid" : "713e1c84a4baa4de",
-    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
-    "status" : "passed",
-    "time" : {
-      "start" : 1522723431,
-      "stop" : 1522723446,
-      "duration" : 15
-    },
-    "flaky" : false,
-    "parameters" : [ ]
-  }, {
-    "name" : "noSentencePunctuationMatchTest(String, int, String)[3]",
-    "uid" : "d6a01591a2ca1782",
-    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
-    "status" : "passed",
-    "time" : {
-      "start" : 1522723431,
-      "stop" : 1522723431,
+      "start" : 1522747582,
+      "stop" : 1522747582,
       "duration" : 0
     },
     "flaky" : false,
     "parameters" : [ ]
   }, {
     "name" : "variableSpaceCountTest(String, int, String)[1]",
-    "uid" : "af1ed1c988ea815b",
+    "uid" : "13b4dac869b2801a",
     "parentUid" : "b1a8273437954620fa374b796ffaacdd",
     "status" : "passed",
     "time" : {
-      "start" : 1522723431,
-      "stop" : 1522723431,
-      "duration" : 0
-    },
-    "flaky" : false,
-    "parameters" : [ ]
-  }, {
-    "name" : "periodsNotIncludedTest(String, int, String)[1]",
-    "uid" : "a1fc70a65523a351",
-    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
-    "status" : "passed",
-    "time" : {
-      "start" : 1522723431,
-      "stop" : 1522723431,
-      "duration" : 0
-    },
-    "flaky" : false,
-    "parameters" : [ ]
-  }, {
-    "name" : "singleSentenceMatchTest(String, int, String)[1]",
-    "uid" : "ba2267a5b205568c",
-    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
-    "status" : "passed",
-    "time" : {
-      "start" : 1522723431,
-      "stop" : 1522723431,
-      "duration" : 0
-    },
-    "flaky" : false,
-    "parameters" : [ ]
-  }, {
-    "name" : "multipleSentenceExceptionTest(String, int, String)[1]",
-    "uid" : "2a3adb41ff13cab7",
-    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
-    "status" : "passed",
-    "time" : {
-      "start" : 1522723431,
-      "stop" : 1522723431,
-      "duration" : 0
-    },
-    "flaky" : false,
-    "parameters" : [ ]
-  }, {
-    "name" : "matchFollowedByEllipsesTest(String, int, String)[1]",
-    "uid" : "b580967144de5c53",
-    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
-    "status" : "passed",
-    "time" : {
-      "start" : 1522723431,
-      "stop" : 1522723431,
-      "duration" : 0
-    },
-    "flaky" : false,
-    "parameters" : [ ]
-  }, {
-    "name" : "matchAnyCaseTest(String, int, String)[1]",
-    "uid" : "db921063b6fbc1e5",
-    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
-    "status" : "passed",
-    "time" : {
-      "start" : 1522723431,
-      "stop" : 1522723431,
-      "duration" : 0
-    },
-    "flaky" : false,
-    "parameters" : [ ]
-  }, {
-    "name" : "multipleLongestWordsMatchTest(String, int, String)[2]",
-    "uid" : "1359518c5c141b7f",
-    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
-    "status" : "passed",
-    "time" : {
-      "start" : 1522723431,
-      "stop" : 1522723431,
-      "duration" : 0
-    },
-    "flaky" : false,
-    "parameters" : [ ]
-  }, {
-    "name" : "ellipsesNotIncludedTest(String, int, String)[1]",
-    "uid" : "cc82887cbe28195b",
-    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
-    "status" : "passed",
-    "time" : {
-      "start" : 1522723431,
-      "stop" : 1522723431,
-      "duration" : 0
-    },
-    "flaky" : false,
-    "parameters" : [ ]
-  }, {
-    "name" : "multipleLongestWordsMatchTest(String, int, String)[3]",
-    "uid" : "79bd42d0d9b59267",
-    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
-    "status" : "passed",
-    "time" : {
-      "start" : 1522723431,
-      "stop" : 1522723431,
-      "duration" : 0
-    },
-    "flaky" : false,
-    "parameters" : [ ]
-  }, {
-    "name" : "noSentencePunctuationMatchTest(String, int, String)[2]",
-    "uid" : "db6fd78a7a874bd9",
-    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
-    "status" : "passed",
-    "time" : {
-      "start" : 1522723431,
-      "stop" : 1522723431,
-      "duration" : 0
-    },
-    "flaky" : false,
-    "parameters" : [ ]
-  }, {
-    "name" : "commasNotIncludedMultipleMatchTest()",
-    "uid" : "4a2538c67ce6830f",
-    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
-    "status" : "passed",
-    "time" : {
-      "start" : 1522723431,
-      "stop" : 1522723431,
-      "duration" : 0
-    },
-    "flaky" : false,
-    "parameters" : [ ]
-  }, {
-    "name" : "matchAnyCaseTest(String, int, String)[2]",
-    "uid" : "35dcd30f7678f6e2",
-    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
-    "status" : "passed",
-    "time" : {
-      "start" : 1522723431,
-      "stop" : 1522723431,
-      "duration" : 0
-    },
-    "flaky" : false,
-    "parameters" : [ ]
-  }, {
-    "name" : "matchOnlyCapsTest(String, int, String)[2]",
-    "uid" : "d5e265bf264fc8e5",
-    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
-    "status" : "passed",
-    "time" : {
-      "start" : 1522723431,
-      "stop" : 1522723431,
-      "duration" : 0
-    },
-    "flaky" : false,
-    "parameters" : [ ]
-  }, {
-    "name" : "wordsMatchedWithCommasMultipleMatchTest()",
-    "uid" : "19235f2a12cb71f0",
-    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
-    "status" : "passed",
-    "time" : {
-      "start" : 1522723431,
-      "stop" : 1522723431,
-      "duration" : 0
-    },
-    "flaky" : false,
-    "parameters" : [ ]
-  }, {
-    "name" : "noSentencePunctuationMatchTest(String, int, String)[1]",
-    "uid" : "1c56972eb709569d",
-    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
-    "status" : "passed",
-    "time" : {
-      "start" : 1522723431,
-      "stop" : 1522723431,
+      "start" : 1522747582,
+      "stop" : 1522747582,
       "duration" : 0
     },
     "flaky" : false,
     "parameters" : [ ]
   }, {
     "name" : "multipleLongestWordsMatchTest(String, int, String)[1]",
-    "uid" : "f4620767fa1df680",
+    "uid" : "8ff7dc59afce9111",
     "parentUid" : "b1a8273437954620fa374b796ffaacdd",
     "status" : "passed",
     "time" : {
-      "start" : 1522723431,
-      "stop" : 1522723468,
+      "start" : 1522747582,
+      "stop" : 1522747582,
+      "duration" : 0
+    },
+    "flaky" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "matchPrecededByEllipsesTest(String, int, String)[1]",
+    "uid" : "586eae6c06530726",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1522747582,
+      "stop" : 1522747582,
+      "duration" : 0
+    },
+    "flaky" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "numbersIncludedTest(String, int, String)[3]",
+    "uid" : "bfeefaab7de85b0e",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1522747582,
+      "stop" : 1522747582,
+      "duration" : 0
+    },
+    "flaky" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "multipleSentenceExceptionTest(String, int, String)[1]",
+    "uid" : "22c582e58f8a0f5",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1522747582,
+      "stop" : 1522747582,
+      "duration" : 0
+    },
+    "flaky" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "noSentencePunctuationMatchTest(String, int, String)[2]",
+    "uid" : "a08d0806d0faf364",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1522747582,
+      "stop" : 1522747582,
+      "duration" : 0
+    },
+    "flaky" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "matchAnyCaseTest(String, int, String)[1]",
+    "uid" : "f709a99444c47d1a",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1522747582,
+      "stop" : 1522747582,
+      "duration" : 0
+    },
+    "flaky" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "multipleLongestWordsMatchTest(String, int, String)[2]",
+    "uid" : "7f5179dc06791932",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1522747582,
+      "stop" : 1522747582,
+      "duration" : 0
+    },
+    "flaky" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "wordsMatchedWithCommasMultipleMatchTest()",
+    "uid" : "72ed479ab2c2effb",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1522747582,
+      "stop" : 1522747597,
+      "duration" : 15
+    },
+    "flaky" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "variableSpaceCountTest(String, int, String)[2]",
+    "uid" : "e2b7af9285a7a056",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1522747582,
+      "stop" : 1522747582,
+      "duration" : 0
+    },
+    "flaky" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "noSentencePunctuationMatchTest(String, int, String)[1]",
+    "uid" : "bc2af984648778ed",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1522747582,
+      "stop" : 1522747582,
+      "duration" : 0
+    },
+    "flaky" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "ansiSupportedMatchTest(String, int, String)[1]",
+    "uid" : "fd61f555d85333df",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1522747582,
+      "stop" : 1522747619,
       "duration" : 37
+    },
+    "flaky" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "matchOnlyCapsTest(String, int, String)[1]",
+    "uid" : "a05b963965544b3d",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1522747582,
+      "stop" : 1522747597,
+      "duration" : 15
+    },
+    "flaky" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "numbersIncludedTest(String, int, String)[2]",
+    "uid" : "26a515714bb5951b",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1522747582,
+      "stop" : 1522747582,
+      "duration" : 0
+    },
+    "flaky" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "commasNotIncludedOneMatchTest()",
+    "uid" : "5fab3a1f73302611",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1522747582,
+      "stop" : 1522747582,
+      "duration" : 0
+    },
+    "flaky" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "multipleLongestWordsMatchTest(String, int, String)[3]",
+    "uid" : "d3f5e75a2884b688",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1522747582,
+      "stop" : 1522747582,
+      "duration" : 0
+    },
+    "flaky" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "numbersIncludedTest(String, int, String)[1]",
+    "uid" : "77ab9c93a6d9b383",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1522747582,
+      "stop" : 1522747582,
+      "duration" : 0
+    },
+    "flaky" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "commasNotIncludedMultipleMatchTest()",
+    "uid" : "a1cc0acc700e3253",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1522747582,
+      "stop" : 1522747582,
+      "duration" : 0
+    },
+    "flaky" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "noCharactersTest()",
+    "uid" : "963a9fb6a42ddb0b",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1522747582,
+      "stop" : 1522747582,
+      "duration" : 0
+    },
+    "flaky" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "wordsMatchedWithCommasOneMatchTest()",
+    "uid" : "17b05ffcefabda0d",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1522747582,
+      "stop" : 1522747582,
+      "duration" : 0
+    },
+    "flaky" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "matchAnyCaseTest(String, int, String)[2]",
+    "uid" : "304958bb011b02f1",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1522747582,
+      "stop" : 1522747582,
+      "duration" : 0
+    },
+    "flaky" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "matchFollowedByEllipsesTest(String, int, String)[1]",
+    "uid" : "f185d396ba4bc09d",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1522747582,
+      "stop" : 1522747582,
+      "duration" : 0
+    },
+    "flaky" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "ellipsesNotIncludedTest(String, int, String)[1]",
+    "uid" : "68ffb4566ce415dc",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1522747582,
+      "stop" : 1522747582,
+      "duration" : 0
+    },
+    "flaky" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "periodsNotIncludedTest(String, int, String)[1]",
+    "uid" : "f30b640bec5874c9",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1522747582,
+      "stop" : 1522747582,
+      "duration" : 0
+    },
+    "flaky" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "ansiSupportedMatchTest(String, int, String)[3]",
+    "uid" : "508f99730190bcbb",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1522747582,
+      "stop" : 1522747582,
+      "duration" : 0
+    },
+    "flaky" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "matchOnlyCapsTest(String, int, String)[2]",
+    "uid" : "8ff27987cf30dc2c",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1522747582,
+      "stop" : 1522747582,
+      "duration" : 0
     },
     "flaky" : false,
     "parameters" : [ ]

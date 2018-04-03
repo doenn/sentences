@@ -1,10 +1,10 @@
 {
-  "uid" : "52306e311c88fe3a",
-  "name" : "matchPrecededByEllipsesTest(String, int, String)[1]",
-  "historyId" : "JUnit Jupiter:sentences.SentencesTest$PunctuationTests$CommasEllipsesTests#matchPrecededByEllipsesTest(String, int, String)[1]",
+  "uid" : "22c582e58f8a0f5",
+  "name" : "multipleSentenceExceptionTest(String, int, String)[1]",
+  "historyId" : "JUnit Jupiter:sentences.SentencesTest$SentenceTests$MultipleSentenceTests#multipleSentenceExceptionTest(String, int, String)[1]",
   "time" : {
-    "start" : 1522723431,
-    "stop" : 1522723431,
+    "start" : 1522747582,
+    "stop" : 1522747582,
     "duration" : 0
   },
   "status" : "passed",
@@ -22,10 +22,10 @@
     "value" : "PC"
   }, {
     "name" : "testClass",
-    "value" : "sentences.SentencesTest$PunctuationTests$CommasEllipsesTests"
+    "value" : "sentences.SentencesTest$SentenceTests$MultipleSentenceTests"
   }, {
     "name" : "package",
-    "value" : "sentences.SentencesTest$PunctuationTests$CommasEllipsesTests"
+    "value" : "sentences.SentencesTest$SentenceTests$MultipleSentenceTests"
   } ],
   "parameters" : [ ],
   "links" : [ ],
@@ -37,6 +37,6 @@
     "categories" : [ ],
     "tags" : [ ]
   },
-  "source" : "52306e311c88fe3a.json",
+  "source" : "22c582e58f8a0f5.json",
   "parameterValues" : [ ]
 }

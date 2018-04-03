@@ -1,0 +1,42 @@
+{
+  "uid" : "68ffb4566ce415dc",
+  "name" : "ellipsesNotIncludedTest(String, int, String)[1]",
+  "historyId" : "JUnit Jupiter:sentences.SentencesTest$PunctuationTests$CommasEllipsesTests#ellipsesNotIncludedTest(String, int, String)[1]",
+  "time" : {
+    "start" : 1522747582,
+    "stop" : 1522747582,
+    "duration" : 0
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "resultFormat",
+    "value" : "junit"
+  }, {
+    "name" : "suite",
+    "value" : "JUnit Jupiter"
+  }, {
+    "name" : "host",
+    "value" : "PC"
+  }, {
+    "name" : "testClass",
+    "value" : "sentences.SentencesTest$PunctuationTests$CommasEllipsesTests"
+  }, {
+    "name" : "package",
+    "value" : "sentences.SentencesTest$PunctuationTests$CommasEllipsesTests"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "68ffb4566ce415dc.json",
+  "parameterValues" : [ ]
+}

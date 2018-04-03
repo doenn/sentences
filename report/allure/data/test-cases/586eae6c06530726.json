@@ -1,10 +1,10 @@
 {
-  "uid" : "d6a01591a2ca1782",
-  "name" : "noSentencePunctuationMatchTest(String, int, String)[3]",
-  "historyId" : "JUnit Jupiter:sentences.SentencesTest$SentenceTests$NoSentencePunctuationTests#noSentencePunctuationMatchTest(String, int, String)[3]",
+  "uid" : "586eae6c06530726",
+  "name" : "matchPrecededByEllipsesTest(String, int, String)[1]",
+  "historyId" : "JUnit Jupiter:sentences.SentencesTest$PunctuationTests$CommasEllipsesTests#matchPrecededByEllipsesTest(String, int, String)[1]",
   "time" : {
-    "start" : 1522723431,
-    "stop" : 1522723431,
+    "start" : 1522747582,
+    "stop" : 1522747582,
     "duration" : 0
   },
   "status" : "passed",
@@ -22,10 +22,10 @@
     "value" : "PC"
   }, {
     "name" : "testClass",
-    "value" : "sentences.SentencesTest$SentenceTests$NoSentencePunctuationTests"
+    "value" : "sentences.SentencesTest$PunctuationTests$CommasEllipsesTests"
   }, {
     "name" : "package",
-    "value" : "sentences.SentencesTest$SentenceTests$NoSentencePunctuationTests"
+    "value" : "sentences.SentencesTest$PunctuationTests$CommasEllipsesTests"
   } ],
   "parameters" : [ ],
   "links" : [ ],
@@ -37,6 +37,6 @@
     "categories" : [ ],
     "tags" : [ ]
   },
-  "source" : "d6a01591a2ca1782.json",
+  "source" : "586eae6c06530726.json",
   "parameterValues" : [ ]
 }

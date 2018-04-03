@@ -4,115 +4,123 @@
   "children" : [ {
     "name" : "sentences",
     "children" : [ {
-      "name" : "SentencesTest$PunctuationTests$CommasEllipsesTests",
+      "name" : "SentencesTest$SentenceTests$SingleSentencesTests",
       "children" : [ {
-        "name" : "matchPrecededByEllipsesTest(String, int, String)[1]",
-        "uid" : "52306e311c88fe3a",
-        "parentUid" : "05994fc31591dda58f4032f6af7bdbfc",
+        "name" : "singleSentenceMatchTest(String, int, String)[1]",
+        "uid" : "283ce2aacef1eee0",
+        "parentUid" : "6ef907b7af328dc9ee81b7a1e3ed1f93",
         "status" : "passed",
         "time" : {
-          "start" : 1522723431,
-          "stop" : 1522723431,
-          "duration" : 0
-        },
-        "flaky" : false,
-        "parameters" : [ ]
-      }, {
-        "name" : "wordsMatchedWithCommasOneMatchTest()",
-        "uid" : "7409dc876eb865f0",
-        "parentUid" : "05994fc31591dda58f4032f6af7bdbfc",
-        "status" : "passed",
-        "time" : {
-          "start" : 1522723431,
-          "stop" : 1522723431,
-          "duration" : 0
-        },
-        "flaky" : false,
-        "parameters" : [ ]
-      }, {
-        "name" : "commasNotIncludedOneMatchTest()",
-        "uid" : "c6bc546cf0feb612",
-        "parentUid" : "05994fc31591dda58f4032f6af7bdbfc",
-        "status" : "passed",
-        "time" : {
-          "start" : 1522723431,
-          "stop" : 1522723431,
-          "duration" : 0
-        },
-        "flaky" : false,
-        "parameters" : [ ]
-      }, {
-        "name" : "matchFollowedByEllipsesTest(String, int, String)[1]",
-        "uid" : "b580967144de5c53",
-        "parentUid" : "05994fc31591dda58f4032f6af7bdbfc",
-        "status" : "passed",
-        "time" : {
-          "start" : 1522723431,
-          "stop" : 1522723431,
-          "duration" : 0
-        },
-        "flaky" : false,
-        "parameters" : [ ]
-      }, {
-        "name" : "ellipsesNotIncludedTest(String, int, String)[1]",
-        "uid" : "cc82887cbe28195b",
-        "parentUid" : "05994fc31591dda58f4032f6af7bdbfc",
-        "status" : "passed",
-        "time" : {
-          "start" : 1522723431,
-          "stop" : 1522723431,
-          "duration" : 0
-        },
-        "flaky" : false,
-        "parameters" : [ ]
-      }, {
-        "name" : "commasNotIncludedMultipleMatchTest()",
-        "uid" : "4a2538c67ce6830f",
-        "parentUid" : "05994fc31591dda58f4032f6af7bdbfc",
-        "status" : "passed",
-        "time" : {
-          "start" : 1522723431,
-          "stop" : 1522723431,
-          "duration" : 0
-        },
-        "flaky" : false,
-        "parameters" : [ ]
-      }, {
-        "name" : "wordsMatchedWithCommasMultipleMatchTest()",
-        "uid" : "19235f2a12cb71f0",
-        "parentUid" : "05994fc31591dda58f4032f6af7bdbfc",
-        "status" : "passed",
-        "time" : {
-          "start" : 1522723431,
-          "stop" : 1522723431,
+          "start" : 1522747582,
+          "stop" : 1522747582,
           "duration" : 0
         },
         "flaky" : false,
         "parameters" : [ ]
       } ],
-      "uid" : "05994fc31591dda58f4032f6af7bdbfc"
+      "uid" : "6ef907b7af328dc9ee81b7a1e3ed1f93"
+    }, {
+      "name" : "SentencesTest$SentenceTests$NoSentencePunctuationTests",
+      "children" : [ {
+        "name" : "noSentencePunctuationMatchTest(String, int, String)[3]",
+        "uid" : "bee09f8342c7611f",
+        "parentUid" : "47bd56c9b68f4f26debef5d27c41cbc1",
+        "status" : "passed",
+        "time" : {
+          "start" : 1522747582,
+          "stop" : 1522747582,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "noSentencePunctuationMatchTest(String, int, String)[2]",
+        "uid" : "a08d0806d0faf364",
+        "parentUid" : "47bd56c9b68f4f26debef5d27c41cbc1",
+        "status" : "passed",
+        "time" : {
+          "start" : 1522747582,
+          "stop" : 1522747582,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "noSentencePunctuationMatchTest(String, int, String)[1]",
+        "uid" : "bc2af984648778ed",
+        "parentUid" : "47bd56c9b68f4f26debef5d27c41cbc1",
+        "status" : "passed",
+        "time" : {
+          "start" : 1522747582,
+          "stop" : 1522747582,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "47bd56c9b68f4f26debef5d27c41cbc1"
+    }, {
+      "name" : "SentencesTest$CharacterSetTests$ANSITests",
+      "children" : [ {
+        "name" : "ansiSupportedMatchTest(String, int, String)[2]",
+        "uid" : "1756744a807030dd",
+        "parentUid" : "563fb2b6ef53d68aa76ee0ec98475ebc",
+        "status" : "passed",
+        "time" : {
+          "start" : 1522747582,
+          "stop" : 1522747582,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "ansiSupportedMatchTest(String, int, String)[1]",
+        "uid" : "fd61f555d85333df",
+        "parentUid" : "563fb2b6ef53d68aa76ee0ec98475ebc",
+        "status" : "passed",
+        "time" : {
+          "start" : 1522747582,
+          "stop" : 1522747619,
+          "duration" : 37
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "ansiSupportedMatchTest(String, int, String)[3]",
+        "uid" : "508f99730190bcbb",
+        "parentUid" : "563fb2b6ef53d68aa76ee0ec98475ebc",
+        "status" : "passed",
+        "time" : {
+          "start" : 1522747582,
+          "stop" : 1522747582,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "563fb2b6ef53d68aa76ee0ec98475ebc"
     }, {
       "name" : "SentencesTest$SentenceTests$MultipleSentenceTests",
       "children" : [ {
         "name" : "multipleSentenceExceptionTest(String, int, String)[2]",
-        "uid" : "57c8d16b5e7ca99b",
+        "uid" : "240b068a40c94a25",
         "parentUid" : "85a020e7153a48eb38ae7822f5cbe2c4",
         "status" : "passed",
         "time" : {
-          "start" : 1522723431,
-          "stop" : 1522723431,
+          "start" : 1522747582,
+          "stop" : 1522747582,
           "duration" : 0
         },
         "flaky" : false,
         "parameters" : [ ]
       }, {
         "name" : "multipleSentenceExceptionTest(String, int, String)[1]",
-        "uid" : "2a3adb41ff13cab7",
+        "uid" : "22c582e58f8a0f5",
         "parentUid" : "85a020e7153a48eb38ae7822f5cbe2c4",
         "status" : "passed",
         "time" : {
-          "start" : 1522723431,
-          "stop" : 1522723431,
+          "start" : 1522747582,
+          "stop" : 1522747582,
           "duration" : 0
         },
         "flaky" : false,
@@ -122,25 +130,25 @@
     }, {
       "name" : "SentencesTest$SpacesTests",
       "children" : [ {
-        "name" : "variableSpaceCountTest(String, int, String)[2]",
-        "uid" : "29ab9271f26b8ec7",
+        "name" : "variableSpaceCountTest(String, int, String)[1]",
+        "uid" : "13b4dac869b2801a",
         "parentUid" : "43f66045285f21b5e2be02bf043d8af5",
         "status" : "passed",
         "time" : {
-          "start" : 1522723431,
-          "stop" : 1522723431,
+          "start" : 1522747582,
+          "stop" : 1522747582,
           "duration" : 0
         },
         "flaky" : false,
         "parameters" : [ ]
       }, {
-        "name" : "variableSpaceCountTest(String, int, String)[1]",
-        "uid" : "af1ed1c988ea815b",
+        "name" : "variableSpaceCountTest(String, int, String)[2]",
+        "uid" : "e2b7af9285a7a056",
         "parentUid" : "43f66045285f21b5e2be02bf043d8af5",
         "status" : "passed",
         "time" : {
-          "start" : 1522723431,
-          "stop" : 1522723431,
+          "start" : 1522747582,
+          "stop" : 1522747582,
           "duration" : 0
         },
         "flaky" : false,
@@ -148,51 +156,219 @@
       } ],
       "uid" : "43f66045285f21b5e2be02bf043d8af5"
     }, {
-      "name" : "SentencesTest$WordTests",
+      "name" : "SentencesTest$LengthTests$MultipleLongestWordsTests",
       "children" : [ {
-        "name" : "matchOnlyCapsTest(String, int, String)[1]",
-        "uid" : "713e1c84a4baa4de",
-        "parentUid" : "5c45488062481cd97094a228a79dae23",
+        "name" : "multipleLongestWordsMatchTest(String, int, String)[1]",
+        "uid" : "8ff7dc59afce9111",
+        "parentUid" : "4c0a564ad350953564e381f35b134d8b",
         "status" : "passed",
         "time" : {
-          "start" : 1522723431,
-          "stop" : 1522723446,
-          "duration" : 15
-        },
-        "flaky" : false,
-        "parameters" : [ ]
-      }, {
-        "name" : "matchAnyCaseTest(String, int, String)[1]",
-        "uid" : "db921063b6fbc1e5",
-        "parentUid" : "5c45488062481cd97094a228a79dae23",
-        "status" : "passed",
-        "time" : {
-          "start" : 1522723431,
-          "stop" : 1522723431,
+          "start" : 1522747582,
+          "stop" : 1522747582,
           "duration" : 0
         },
         "flaky" : false,
         "parameters" : [ ]
       }, {
-        "name" : "matchAnyCaseTest(String, int, String)[2]",
-        "uid" : "35dcd30f7678f6e2",
+        "name" : "multipleLongestWordsMatchTest(String, int, String)[2]",
+        "uid" : "7f5179dc06791932",
+        "parentUid" : "4c0a564ad350953564e381f35b134d8b",
+        "status" : "passed",
+        "time" : {
+          "start" : 1522747582,
+          "stop" : 1522747582,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "multipleLongestWordsMatchTest(String, int, String)[3]",
+        "uid" : "d3f5e75a2884b688",
+        "parentUid" : "4c0a564ad350953564e381f35b134d8b",
+        "status" : "passed",
+        "time" : {
+          "start" : 1522747582,
+          "stop" : 1522747582,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "4c0a564ad350953564e381f35b134d8b"
+    }, {
+      "name" : "SentencesTest$PunctuationTests$CommasEllipsesTests",
+      "children" : [ {
+        "name" : "matchPrecededByEllipsesTest(String, int, String)[1]",
+        "uid" : "586eae6c06530726",
+        "parentUid" : "05994fc31591dda58f4032f6af7bdbfc",
+        "status" : "passed",
+        "time" : {
+          "start" : 1522747582,
+          "stop" : 1522747582,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "wordsMatchedWithCommasMultipleMatchTest()",
+        "uid" : "72ed479ab2c2effb",
+        "parentUid" : "05994fc31591dda58f4032f6af7bdbfc",
+        "status" : "passed",
+        "time" : {
+          "start" : 1522747582,
+          "stop" : 1522747597,
+          "duration" : 15
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "commasNotIncludedOneMatchTest()",
+        "uid" : "5fab3a1f73302611",
+        "parentUid" : "05994fc31591dda58f4032f6af7bdbfc",
+        "status" : "passed",
+        "time" : {
+          "start" : 1522747582,
+          "stop" : 1522747582,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "commasNotIncludedMultipleMatchTest()",
+        "uid" : "a1cc0acc700e3253",
+        "parentUid" : "05994fc31591dda58f4032f6af7bdbfc",
+        "status" : "passed",
+        "time" : {
+          "start" : 1522747582,
+          "stop" : 1522747582,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "wordsMatchedWithCommasOneMatchTest()",
+        "uid" : "17b05ffcefabda0d",
+        "parentUid" : "05994fc31591dda58f4032f6af7bdbfc",
+        "status" : "passed",
+        "time" : {
+          "start" : 1522747582,
+          "stop" : 1522747582,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "matchFollowedByEllipsesTest(String, int, String)[1]",
+        "uid" : "f185d396ba4bc09d",
+        "parentUid" : "05994fc31591dda58f4032f6af7bdbfc",
+        "status" : "passed",
+        "time" : {
+          "start" : 1522747582,
+          "stop" : 1522747582,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "ellipsesNotIncludedTest(String, int, String)[1]",
+        "uid" : "68ffb4566ce415dc",
+        "parentUid" : "05994fc31591dda58f4032f6af7bdbfc",
+        "status" : "passed",
+        "time" : {
+          "start" : 1522747582,
+          "stop" : 1522747582,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "05994fc31591dda58f4032f6af7bdbfc"
+    }, {
+      "name" : "SentencesTest$NumbersTests",
+      "children" : [ {
+        "name" : "numbersIncludedTest(String, int, String)[3]",
+        "uid" : "bfeefaab7de85b0e",
+        "parentUid" : "adc9ae3473a38bb352be615d3cc6822e",
+        "status" : "passed",
+        "time" : {
+          "start" : 1522747582,
+          "stop" : 1522747582,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "numbersIncludedTest(String, int, String)[2]",
+        "uid" : "26a515714bb5951b",
+        "parentUid" : "adc9ae3473a38bb352be615d3cc6822e",
+        "status" : "passed",
+        "time" : {
+          "start" : 1522747582,
+          "stop" : 1522747582,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "numbersIncludedTest(String, int, String)[1]",
+        "uid" : "77ab9c93a6d9b383",
+        "parentUid" : "adc9ae3473a38bb352be615d3cc6822e",
+        "status" : "passed",
+        "time" : {
+          "start" : 1522747582,
+          "stop" : 1522747582,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "adc9ae3473a38bb352be615d3cc6822e"
+    }, {
+      "name" : "SentencesTest$WordTests",
+      "children" : [ {
+        "name" : "matchAnyCaseTest(String, int, String)[1]",
+        "uid" : "f709a99444c47d1a",
         "parentUid" : "5c45488062481cd97094a228a79dae23",
         "status" : "passed",
         "time" : {
-          "start" : 1522723431,
-          "stop" : 1522723431,
+          "start" : 1522747582,
+          "stop" : 1522747582,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "matchOnlyCapsTest(String, int, String)[1]",
+        "uid" : "a05b963965544b3d",
+        "parentUid" : "5c45488062481cd97094a228a79dae23",
+        "status" : "passed",
+        "time" : {
+          "start" : 1522747582,
+          "stop" : 1522747597,
+          "duration" : 15
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "matchAnyCaseTest(String, int, String)[2]",
+        "uid" : "304958bb011b02f1",
+        "parentUid" : "5c45488062481cd97094a228a79dae23",
+        "status" : "passed",
+        "time" : {
+          "start" : 1522747582,
+          "stop" : 1522747582,
           "duration" : 0
         },
         "flaky" : false,
         "parameters" : [ ]
       }, {
         "name" : "matchOnlyCapsTest(String, int, String)[2]",
-        "uid" : "d5e265bf264fc8e5",
+        "uid" : "8ff27987cf30dc2c",
         "parentUid" : "5c45488062481cd97094a228a79dae23",
         "status" : "passed",
         "time" : {
-          "start" : 1522723431,
-          "stop" : 1522723431,
+          "start" : 1522747582,
+          "stop" : 1522747582,
           "duration" : 0
         },
         "flaky" : false,
@@ -200,117 +376,37 @@
       } ],
       "uid" : "5c45488062481cd97094a228a79dae23"
     }, {
-      "name" : "SentencesTest$SentenceTests$NoSentencePunctuationTests",
+      "name" : "SentencesTest$LengthTests$NoCharactersTests",
       "children" : [ {
-        "name" : "noSentencePunctuationMatchTest(String, int, String)[3]",
-        "uid" : "d6a01591a2ca1782",
-        "parentUid" : "47bd56c9b68f4f26debef5d27c41cbc1",
+        "name" : "noCharactersTest()",
+        "uid" : "963a9fb6a42ddb0b",
+        "parentUid" : "14f0a99b013a8364050323fc9ec31c2b",
         "status" : "passed",
         "time" : {
-          "start" : 1522723431,
-          "stop" : 1522723431,
-          "duration" : 0
-        },
-        "flaky" : false,
-        "parameters" : [ ]
-      }, {
-        "name" : "noSentencePunctuationMatchTest(String, int, String)[2]",
-        "uid" : "db6fd78a7a874bd9",
-        "parentUid" : "47bd56c9b68f4f26debef5d27c41cbc1",
-        "status" : "passed",
-        "time" : {
-          "start" : 1522723431,
-          "stop" : 1522723431,
-          "duration" : 0
-        },
-        "flaky" : false,
-        "parameters" : [ ]
-      }, {
-        "name" : "noSentencePunctuationMatchTest(String, int, String)[1]",
-        "uid" : "1c56972eb709569d",
-        "parentUid" : "47bd56c9b68f4f26debef5d27c41cbc1",
-        "status" : "passed",
-        "time" : {
-          "start" : 1522723431,
-          "stop" : 1522723431,
+          "start" : 1522747582,
+          "stop" : 1522747582,
           "duration" : 0
         },
         "flaky" : false,
         "parameters" : [ ]
       } ],
-      "uid" : "47bd56c9b68f4f26debef5d27c41cbc1"
+      "uid" : "14f0a99b013a8364050323fc9ec31c2b"
     }, {
       "name" : "SentencesTest$PunctuationTests$PeriodsTests",
       "children" : [ {
         "name" : "periodsNotIncludedTest(String, int, String)[1]",
-        "uid" : "a1fc70a65523a351",
+        "uid" : "f30b640bec5874c9",
         "parentUid" : "9e083845644af98ac75584baa6b04261",
         "status" : "passed",
         "time" : {
-          "start" : 1522723431,
-          "stop" : 1522723431,
+          "start" : 1522747582,
+          "stop" : 1522747582,
           "duration" : 0
         },
         "flaky" : false,
         "parameters" : [ ]
       } ],
       "uid" : "9e083845644af98ac75584baa6b04261"
-    }, {
-      "name" : "SentencesTest$SentenceTests$SingleSentencesTests",
-      "children" : [ {
-        "name" : "singleSentenceMatchTest(String, int, String)[1]",
-        "uid" : "ba2267a5b205568c",
-        "parentUid" : "6ef907b7af328dc9ee81b7a1e3ed1f93",
-        "status" : "passed",
-        "time" : {
-          "start" : 1522723431,
-          "stop" : 1522723431,
-          "duration" : 0
-        },
-        "flaky" : false,
-        "parameters" : [ ]
-      } ],
-      "uid" : "6ef907b7af328dc9ee81b7a1e3ed1f93"
-    }, {
-      "name" : "SentencesTest$LengthTests$MultipleLongestWordsTests",
-      "children" : [ {
-        "name" : "multipleLongestWordsMatchTest(String, int, String)[2]",
-        "uid" : "1359518c5c141b7f",
-        "parentUid" : "4c0a564ad350953564e381f35b134d8b",
-        "status" : "passed",
-        "time" : {
-          "start" : 1522723431,
-          "stop" : 1522723431,
-          "duration" : 0
-        },
-        "flaky" : false,
-        "parameters" : [ ]
-      }, {
-        "name" : "multipleLongestWordsMatchTest(String, int, String)[3]",
-        "uid" : "79bd42d0d9b59267",
-        "parentUid" : "4c0a564ad350953564e381f35b134d8b",
-        "status" : "passed",
-        "time" : {
-          "start" : 1522723431,
-          "stop" : 1522723431,
-          "duration" : 0
-        },
-        "flaky" : false,
-        "parameters" : [ ]
-      }, {
-        "name" : "multipleLongestWordsMatchTest(String, int, String)[1]",
-        "uid" : "f4620767fa1df680",
-        "parentUid" : "4c0a564ad350953564e381f35b134d8b",
-        "status" : "passed",
-        "time" : {
-          "start" : 1522723431,
-          "stop" : 1522723468,
-          "duration" : 37
-        },
-        "flaky" : false,
-        "parameters" : [ ]
-      } ],
-      "uid" : "4c0a564ad350953564e381f35b134d8b"
     } ],
     "uid" : "232cdb485895f886e67116621b09e3c1"
   } ]

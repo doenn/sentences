@@ -1,0 +1,42 @@
+{
+  "uid" : "26a515714bb5951b",
+  "name" : "numbersIncludedTest(String, int, String)[2]",
+  "historyId" : "JUnit Jupiter:sentences.SentencesTest$NumbersTests#numbersIncludedTest(String, int, String)[2]",
+  "time" : {
+    "start" : 1522747582,
+    "stop" : 1522747582,
+    "duration" : 0
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "resultFormat",
+    "value" : "junit"
+  }, {
+    "name" : "suite",
+    "value" : "JUnit Jupiter"
+  }, {
+    "name" : "host",
+    "value" : "PC"
+  }, {
+    "name" : "testClass",
+    "value" : "sentences.SentencesTest$NumbersTests"
+  }, {
+    "name" : "package",
+    "value" : "sentences.SentencesTest$NumbersTests"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "26a515714bb5951b.json",
+  "parameterValues" : [ ]
+}

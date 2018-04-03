@@ -1,10 +1,10 @@
 {
-  "uid" : "b580967144de5c53",
-  "name" : "matchFollowedByEllipsesTest(String, int, String)[1]",
-  "historyId" : "JUnit Jupiter:sentences.SentencesTest$PunctuationTests$CommasEllipsesTests#matchFollowedByEllipsesTest(String, int, String)[1]",
+  "uid" : "283ce2aacef1eee0",
+  "name" : "singleSentenceMatchTest(String, int, String)[1]",
+  "historyId" : "JUnit Jupiter:sentences.SentencesTest$SentenceTests$SingleSentencesTests#singleSentenceMatchTest(String, int, String)[1]",
   "time" : {
-    "start" : 1522723431,
-    "stop" : 1522723431,
+    "start" : 1522747582,
+    "stop" : 1522747582,
     "duration" : 0
   },
   "status" : "passed",
@@ -22,10 +22,10 @@
     "value" : "PC"
   }, {
     "name" : "testClass",
-    "value" : "sentences.SentencesTest$PunctuationTests$CommasEllipsesTests"
+    "value" : "sentences.SentencesTest$SentenceTests$SingleSentencesTests"
   }, {
     "name" : "package",
-    "value" : "sentences.SentencesTest$PunctuationTests$CommasEllipsesTests"
+    "value" : "sentences.SentencesTest$SentenceTests$SingleSentencesTests"
   } ],
   "parameters" : [ ],
   "links" : [ ],
@@ -37,6 +37,6 @@
     "categories" : [ ],
     "tags" : [ ]
   },
-  "source" : "b580967144de5c53.json",
+  "source" : "283ce2aacef1eee0.json",
   "parameterValues" : [ ]
 }

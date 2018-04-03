@@ -1,10 +1,10 @@
 {
-  "uid" : "79bd42d0d9b59267",
-  "name" : "multipleLongestWordsMatchTest(String, int, String)[3]",
-  "historyId" : "JUnit Jupiter:sentences.SentencesTest$LengthTests$MultipleLongestWordsTests#multipleLongestWordsMatchTest(String, int, String)[3]",
+  "uid" : "5fab3a1f73302611",
+  "name" : "commasNotIncludedOneMatchTest()",
+  "historyId" : "JUnit Jupiter:sentences.SentencesTest$PunctuationTests$CommasEllipsesTests#commasNotIncludedOneMatchTest()",
   "time" : {
-    "start" : 1522723431,
-    "stop" : 1522723431,
+    "start" : 1522747582,
+    "stop" : 1522747582,
     "duration" : 0
   },
   "status" : "passed",
@@ -22,10 +22,10 @@
     "value" : "PC"
   }, {
     "name" : "testClass",
-    "value" : "sentences.SentencesTest$LengthTests$MultipleLongestWordsTests"
+    "value" : "sentences.SentencesTest$PunctuationTests$CommasEllipsesTests"
   }, {
     "name" : "package",
-    "value" : "sentences.SentencesTest$LengthTests$MultipleLongestWordsTests"
+    "value" : "sentences.SentencesTest$PunctuationTests$CommasEllipsesTests"
   } ],
   "parameters" : [ ],
   "links" : [ ],
@@ -37,6 +37,6 @@
     "categories" : [ ],
     "tags" : [ ]
   },
-  "source" : "79bd42d0d9b59267.json",
+  "source" : "5fab3a1f73302611.json",
   "parameterValues" : [ ]
 }

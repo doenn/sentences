@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="JUnit Jupiter" tests="23" skipped="0" failures="0" errors="0" time="0.3" hostname="PC" timestamp="2018-04-02T22:43:51">
+<testsuite name="JUnit Jupiter" tests="30" skipped="0" failures="0" errors="0" time="0.369" hostname="PC" timestamp="2018-04-03T05:26:22">
 <properties>
 <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
 <property name="file.encoding" value="Cp1252"/>
@@ -60,7 +60,43 @@
 <property name="user.timezone" value="America/New_York"/>
 <property name="user.variant" value=""/>
 </properties>
-<testcase name="multipleLongestWordsMatchTest(String, int, String)[1]" classname="sentences.SentencesTest$LengthTests$MultipleLongestWordsTests" time="0.037">
+<testcase name="ansiSupportedMatchTest(String, int, String)[1]" classname="sentences.SentencesTest$CharacterSetTests$ANSITests" time="0.037">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:sentences.SentencesTest]/[nested-class:CharacterSetTests]/[nested-class:ANSITests]/[test-template:ansiSupportedMatchTest(java.lang.String, int, java.lang.String)]/[test-template-invocation:#1]
+display-name: [1] She thought the storm had subsided., 6, subsided
+]]></system-out>
+</testcase>
+<testcase name="ansiSupportedMatchTest(String, int, String)[2]" classname="sentences.SentencesTest$CharacterSetTests$ANSITests" time="0">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:sentences.SentencesTest]/[nested-class:CharacterSetTests]/[nested-class:ANSITests]/[test-template:ansiSupportedMatchTest(java.lang.String, int, java.lang.String)]/[test-template-invocation:#2]
+display-name: [2] We could not find the game score., 7, could score
+]]></system-out>
+</testcase>
+<testcase name="ansiSupportedMatchTest(String, int, String)[3]" classname="sentences.SentencesTest$CharacterSetTests$ANSITests" time="0">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:sentences.SentencesTest]/[nested-class:CharacterSetTests]/[nested-class:ANSITests]/[test-template:ansiSupportedMatchTest(java.lang.String, int, java.lang.String)]/[test-template-invocation:#3]
+display-name: [3] The breakfast was ready., 4, breakfast
+]]></system-out>
+</testcase>
+<testcase name="numbersIncludedTest(String, int, String)[1]" classname="sentences.SentencesTest$NumbersTests" time="0">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:sentences.SentencesTest]/[nested-class:NumbersTests]/[test-template:numbersIncludedTest(java.lang.String, int, java.lang.String)]/[test-template-invocation:#1]
+display-name: [1] 3 days ago was my anniversary., 5, anniversary
+]]></system-out>
+</testcase>
+<testcase name="numbersIncludedTest(String, int, String)[2]" classname="sentences.SentencesTest$NumbersTests" time="0">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:sentences.SentencesTest]/[nested-class:NumbersTests]/[test-template:numbersIncludedTest(java.lang.String, int, java.lang.String)]/[test-template-invocation:#2]
+display-name: [2] He only needed 2 reasons., 4, reasons
+]]></system-out>
+</testcase>
+<testcase name="numbersIncludedTest(String, int, String)[3]" classname="sentences.SentencesTest$NumbersTests" time="0">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:sentences.SentencesTest]/[nested-class:NumbersTests]/[test-template:numbersIncludedTest(java.lang.String, int, java.lang.String)]/[test-template-invocation:#3]
+display-name: [3] I can count on each of my 23 toes., 8, count
+]]></system-out>
+</testcase>
+<testcase name="multipleLongestWordsMatchTest(String, int, String)[1]" classname="sentences.SentencesTest$LengthTests$MultipleLongestWordsTests" time="0">
 <system-out><![CDATA[
 unique-id: [engine:junit-jupiter]/[class:sentences.SentencesTest]/[nested-class:LengthTests]/[nested-class:MultipleLongestWordsTests]/[test-template:multipleLongestWordsMatchTest(java.lang.String, int, java.lang.String)]/[test-template-invocation:#1]
 display-name: [1] I can ride a bike., 5, ride bike
@@ -76,6 +112,12 @@ display-name: [2] Do not tie your shoes today., 6, shoes today
 <system-out><![CDATA[
 unique-id: [engine:junit-jupiter]/[class:sentences.SentencesTest]/[nested-class:LengthTests]/[nested-class:MultipleLongestWordsTests]/[test-template:multipleLongestWordsMatchTest(java.lang.String, int, java.lang.String)]/[test-template-invocation:#3]
 display-name: [3] Clean your room or I will get very angry., 9, Clean angry
+]]></system-out>
+</testcase>
+<testcase name="noCharactersTest()" classname="sentences.SentencesTest$LengthTests$NoCharactersTests" time="0">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:sentences.SentencesTest]/[nested-class:LengthTests]/[nested-class:NoCharactersTests]/[method:noCharactersTest()]
+display-name: Cannot parse a blank sentence
 ]]></system-out>
 </testcase>
 <testcase name="noSentencePunctuationMatchTest(String, int, String)[1]" classname="sentences.SentencesTest$SentenceTests$NoSentencePunctuationTests" time="0">
@@ -114,7 +156,7 @@ unique-id: [engine:junit-jupiter]/[class:sentences.SentencesTest]/[nested-class:
 display-name: [1] We tried to swim near the lake., 7, tried
 ]]></system-out>
 </testcase>
-<testcase name="wordsMatchedWithCommasMultipleMatchTest()" classname="sentences.SentencesTest$PunctuationTests$CommasEllipsesTests" time="0">
+<testcase name="wordsMatchedWithCommasMultipleMatchTest()" classname="sentences.SentencesTest$PunctuationTests$CommasEllipsesTests" time="0.015">
 <system-out><![CDATA[
 unique-id: [engine:junit-jupiter]/[class:sentences.SentencesTest]/[nested-class:PunctuationTests]/[nested-class:CommasEllipsesTests]/[method:wordsMatchedWithCommasMultipleMatchTest()]
 display-name: Verify words are matched even when they are followed by commas - Multiple Match
