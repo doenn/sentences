@@ -1,0 +1,1 @@
+allure-2.6.0\bin\allure.bat serve report\junit
