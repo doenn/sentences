@@ -1,0 +1,42 @@
+{
+  "uid" : "52306e311c88fe3a",
+  "name" : "matchPrecededByEllipsesTest(String, int, String)[1]",
+  "historyId" : "JUnit Jupiter:sentences.SentencesTest$PunctuationTests$CommasEllipsesTests#matchPrecededByEllipsesTest(String, int, String)[1]",
+  "time" : {
+    "start" : 1522723431,
+    "stop" : 1522723431,
+    "duration" : 0
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "resultFormat",
+    "value" : "junit"
+  }, {
+    "name" : "suite",
+    "value" : "JUnit Jupiter"
+  }, {
+    "name" : "host",
+    "value" : "PC"
+  }, {
+    "name" : "testClass",
+    "value" : "sentences.SentencesTest$PunctuationTests$CommasEllipsesTests"
+  }, {
+    "name" : "package",
+    "value" : "sentences.SentencesTest$PunctuationTests$CommasEllipsesTests"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "52306e311c88fe3a.json",
+  "parameterValues" : [ ]
+}

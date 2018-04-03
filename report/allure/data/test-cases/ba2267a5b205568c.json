@@ -1,0 +1,42 @@
+{
+  "uid" : "ba2267a5b205568c",
+  "name" : "singleSentenceMatchTest(String, int, String)[1]",
+  "historyId" : "JUnit Jupiter:sentences.SentencesTest$SentenceTests$SingleSentencesTests#singleSentenceMatchTest(String, int, String)[1]",
+  "time" : {
+    "start" : 1522723431,
+    "stop" : 1522723431,
+    "duration" : 0
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "resultFormat",
+    "value" : "junit"
+  }, {
+    "name" : "suite",
+    "value" : "JUnit Jupiter"
+  }, {
+    "name" : "host",
+    "value" : "PC"
+  }, {
+    "name" : "testClass",
+    "value" : "sentences.SentencesTest$SentenceTests$SingleSentencesTests"
+  }, {
+    "name" : "package",
+    "value" : "sentences.SentencesTest$SentenceTests$SingleSentencesTests"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "ba2267a5b205568c.json",
+  "parameterValues" : [ ]
+}
