@@ -1,0 +1,2 @@
+Main-Class: sentences.SentenceTests
+Class-Path: junit-platform-console-standalone-1.1.0.jar ./ sentences/
