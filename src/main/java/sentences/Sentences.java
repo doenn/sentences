@@ -63,8 +63,12 @@ public class Sentences {
 			throw new NotSingleSentenceException("Multiple sentences were provided.");	// Not a single sentence.
 		}
 
+		if (sentence.length() == 0){
+			throw new NotSingleSentenceException("No sentences were provided. Nothing was passed to parser.");	// Not a sentence: blank.
+		}
 
-		Pattern wordPattern = Pattern.compile("\\w+");
+
+		Pattern wordPattern = Pattern.compile("[A-Za-z]+");
 		Matcher wordMatcher = wordPattern.matcher(sentence);
 
 		List longestWords = (ArrayList<?>)results.get("Longest Words");

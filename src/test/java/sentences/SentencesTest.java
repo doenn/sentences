@@ -22,9 +22,16 @@ import java.util.regex.Pattern;
 import java.util.regex.Matcher;
 
 
+/**
+*  Unit tests for the Sentences parser app.
+*/
+
 public class SentencesTest{
 
 
+	/**
+	* Tests from the "Word" sub-suite.
+	*/
 	@Nested
 	public class WordTests{
 
@@ -131,6 +138,13 @@ public class SentencesTest{
 
 	}
 
+
+
+
+	/**
+	* Tests from the "Spaces" sub-suite.
+	*/
+
 	@Nested
 	public class SpacesTests{
 
@@ -185,6 +199,10 @@ public class SentencesTest{
 		}
 
 	}
+
+	/**
+	* Tests from the "Punctuation" sub-suite.
+	*/
 
 	@Nested
 	public class PunctuationTests{
@@ -249,6 +267,10 @@ public class SentencesTest{
 
 		}
 
+
+		/**
+		* Tests from the "Punctuation" sub-suite's "Commas ellipses" sub-suite.
+		*/
 
 		@Nested
 		public class CommasEllipsesTests{
@@ -820,6 +842,31 @@ public class SentencesTest{
 	public class LengthTests{
 
 		@Nested
+		public class NoCharactersTests{
+	
+					
+			@DisplayName ("Cannot parse a blank sentence")
+			@Tag ("Unit")
+			@Test
+			public void noCharactersTest(){		
+
+
+			
+				String sentence = "";
+
+				Sentences sentences = new Sentences();
+
+				Throwable notSingleSentenceException = assertThrows(Sentences.NotSingleSentenceException.class, ()-> {
+					sentences.parseSentence(sentence);			
+				});
+
+				assertEquals("No sentences were provided. Nothing was passed to parser.", notSingleSentenceException.getMessage());
+
+			}
+
+		}
+
+		@Nested
 		public class MultipleLongestWordsTests{
 	
 					
@@ -876,6 +923,123 @@ public class SentencesTest{
 
 		}
 
+	}
+
+	@Nested
+	public class NumbersTests{
+
+	
+					
+		@ParameterizedTest
+		@CsvFileSource(resources = "/Numbers/Numbers/Can include numbers in sentences without affecting word count or longest words.csv") 
+		@DisplayName ("Can include numbers in sentences without affecting word count or longest words")
+		@Tag ("Unit")
+		public void numbersIncludedTest(String sentence, int expectedLength, String longestWord){		
+			Map<String, Object> results = null;
+
+
+			Pattern expectedWordPattern = Pattern.compile("([^\\s]+)(\\s)?");		// Tokenize by spaces
+			Matcher expectedWordMatcher = expectedWordPattern.matcher(longestWord);
+
+
+			List expectedLongestWords = new ArrayList<String>();
+
+			while (expectedWordMatcher.find()){		// Parse expectedLongestWords arguments into ArrayList
+				String expectedWordMatch = expectedWordMatcher.group(1);
+				expectedLongestWords.add(expectedWordMatch);
+			}
+	
+
+			Sentences sentences = new Sentences();
+			try {
+				results = sentences.parseSentence(sentence);
+			}
+			catch(NotSingleSentenceException notSingleSentenceException){
+				notSingleSentenceException.printStackTrace();
+			}
+
+
+			Integer sentenceLength = (Integer)results.get("Length");
+			List longestWords = (ArrayList<?>)results.get("Longest Words");
+				
+		
+
+			assertEquals(longestWords.size(), expectedLongestWords.size());
+
+			for (String expectedWord :  (ArrayList<String>)expectedLongestWords){
+
+				long sameWordCount = ((ArrayList<String>)longestWords).stream()
+							.filter((String returnedWord)->{
+								return expectedWord.equals(returnedWord);
+							})
+							.count();
+				assertEquals(sameWordCount, 1);					// Only one match, no more.
+			}
+		
+
+			assertEquals(sentenceLength, Integer.valueOf(expectedLength));
+		}
+				
+	}
+
+	@Nested
+	public class CharacterSetTests{
+
+		@Nested
+		public class ANSITests{
+	
+					
+			@ParameterizedTest
+			@CsvFileSource(resources = "/Character set/ANSI/Verify words with ANSI characters are supported and matched.csv") 
+			@DisplayName ("Verify words with ANSI characters are supported and matched")
+			@Tag ("Unit")
+			public void ansiSupportedMatchTest(String sentence, int expectedLength, String longestWord){		
+				Map<String, Object> results = null;
+
+
+				Pattern expectedWordPattern = Pattern.compile("([^\\s]+)(\\s)?");		// Tokenize by spaces
+				Matcher expectedWordMatcher = expectedWordPattern.matcher(longestWord);
+
+
+				List expectedLongestWords = new ArrayList<String>();
+
+				while (expectedWordMatcher.find()){		// Parse expectedLongestWords arguments into ArrayList
+					String expectedWordMatch = expectedWordMatcher.group(1);
+					expectedLongestWords.add(expectedWordMatch);
+				}
+	
+
+				Sentences sentences = new Sentences();
+				try {
+					results = sentences.parseSentence(sentence);
+				}
+				catch(NotSingleSentenceException notSingleSentenceException){
+					notSingleSentenceException.printStackTrace();
+				}
+
+
+				Integer sentenceLength = (Integer)results.get("Length");
+				List longestWords = (ArrayList<?>)results.get("Longest Words");
+				
+		
+
+				assertEquals(longestWords.size(), expectedLongestWords.size());
+
+				for (String expectedWord :  (ArrayList<String>)expectedLongestWords){
+
+					long sameWordCount = ((ArrayList<String>)longestWords).stream()
+								.filter((String returnedWord)->{
+									return expectedWord.equals(returnedWord);
+								})
+								.count();
+					assertEquals(sameWordCount, 1);					// Only one match, no more.
+				}
+		
+
+				assertEquals(sentenceLength, Integer.valueOf(expectedLength));
+			}
+				
+		}
 	}
 
 

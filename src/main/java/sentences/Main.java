@@ -18,6 +18,7 @@ public class Main {
 		catch(NotSingleSentenceException notSingleSentenceException){
 			notSingleSentenceException.printStackTrace();
 		}
+
 	
 
 	}
