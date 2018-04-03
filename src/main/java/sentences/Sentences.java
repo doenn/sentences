@@ -26,14 +26,43 @@ public class Sentences {
 		results.put("Longest Words", new ArrayList<String>());			// Longest Words ArrayList begins with size of 0
 	}
 
+
+	public class NotSingleSentenceException extends Exception{
+
+		/**
+		* No-arg constructor.
+		*/
+		public NotSingleSentenceException(){
+
+		}
+
+		/**
+		* Constructor that accepts a message.
+		* @param message a description String.
+		*/
+		public NotSingleSentenceException(String message){
+			super(message);
+		}
+
+
+	}
+
 	/**
 	* Parses a sentence and returns both the word count and longest word.
 	* 
 	* @param sentence a sentence String.
+	* @throws NotSingleSentenceException a NotSingleSentenceException exception.
 	* @return the word count and longest word.
 	*/
-	public Map parseSentence(String sentence){
+	public Map parseSentence(String sentence) throws NotSingleSentenceException{
 			
+		Pattern notSingleSentencePattern = Pattern.compile("((([^\\.]\\.)|!)\\s)");		// Period or exclamation mark followed by space. Period not preceded by another period (ellipses). 
+		Matcher notSingleSentenceMatcher = notSingleSentencePattern.matcher(sentence);
+
+		if (notSingleSentenceMatcher.find()){
+			throw new NotSingleSentenceException("Multiple sentences were provided.");	// Not a single sentence.
+		}
+
 
 		Pattern wordPattern = Pattern.compile("\\w+");
 		Matcher wordMatcher = wordPattern.matcher(sentence);

@@ -1,8 +1,10 @@
 package sentences;
 
+import sentences.Sentences.NotSingleSentenceException;
+
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertNotEquals;
-
+import static org.junit.jupiter.api.Assertions.assertThrows;
 
 import org.junit.jupiter.api.*;
 import org.junit.jupiter.params.ParameterizedTest;
@@ -32,7 +34,7 @@ public class SentencesTest{
 		@Tag ("Unit")
 		public void matchAnyCaseTest(String sentence, int expectedLength, String longestWord){
 
-			Map<String, Object> results;
+			Map<String, Object> results = null;
 
 
 			Pattern expectedWordPattern = Pattern.compile("([^\\s]+)(\\s)?");		// Tokenize by spaces
@@ -48,8 +50,12 @@ public class SentencesTest{
 	
 
 			Sentences sentences = new Sentences();
-			results = sentences.parseSentence(sentence);
-
+			try {
+				results = sentences.parseSentence(sentence);
+			}
+			catch(NotSingleSentenceException notSingleSentenceException){
+				notSingleSentenceException.printStackTrace();
+			}
 
 			Integer sentenceLength = (Integer)results.get("Length");
 			List longestWords = (ArrayList<?>)results.get("Longest Words");
@@ -76,7 +82,7 @@ public class SentencesTest{
 		@Tag ("Unit")
 		public void matchOnlyCapsTest(String sentence, int expectedLength, String longestWord){
 
-			Map<String, Object> results;
+			Map<String, Object> results = null;
 
 
 			Pattern expectedWordPattern = Pattern.compile("([^\\s]+)(\\s)?");		// Tokenize by spaces
@@ -92,7 +98,12 @@ public class SentencesTest{
 	
 
 			Sentences sentences = new Sentences();
-			results = sentences.parseSentence(sentence);
+			try {
+				results = sentences.parseSentence(sentence);
+			}
+			catch(NotSingleSentenceException notSingleSentenceException){
+				notSingleSentenceException.printStackTrace();
+			}
 
 
 			Integer sentenceLength = (Integer)results.get("Length");
@@ -129,7 +140,7 @@ public class SentencesTest{
 		@Tag ("Unit")
 		public void variableSpaceCountTest(String sentence, int expectedLength, String longestWord){		
 
-			Map<String, Object> results;
+			Map<String, Object> results = null;
 
 
 			Pattern expectedWordPattern = Pattern.compile("([^\\s]+)(\\s)?");		// Tokenize by spaces
@@ -145,7 +156,12 @@ public class SentencesTest{
 	
 
 			Sentences sentences = new Sentences();
-			results = sentences.parseSentence(sentence);
+			try {
+				results = sentences.parseSentence(sentence);
+			}
+			catch(NotSingleSentenceException notSingleSentenceException){
+				notSingleSentenceException.printStackTrace();
+			}
 
 
 			Integer sentenceLength = (Integer)results.get("Length");
@@ -182,7 +198,7 @@ public class SentencesTest{
 			@Tag ("Unit")
 			public void periodsNotIncludedTest(String sentence, int expectedLength, String longestWord){		
 
-				Map<String, Object> results;
+				Map<String, Object> results = null;
 
 
 				Pattern expectedWordPattern = Pattern.compile("([^\\s]+)(\\s)?");		// Tokenize by spaces
@@ -198,7 +214,12 @@ public class SentencesTest{
 	
 
 				Sentences sentences = new Sentences();
-				results = sentences.parseSentence(sentence);
+				try {
+					results = sentences.parseSentence(sentence);
+				}
+				catch(NotSingleSentenceException notSingleSentenceException){
+					notSingleSentenceException.printStackTrace();
+				}
 
 
 				Integer sentenceLength = (Integer)results.get("Length");
@@ -244,7 +265,7 @@ public class SentencesTest{
 				String longestWord = "cake milk soda";
 
 
-				Map<String, Object> results;
+				Map<String, Object> results = null;
 
 
 				Pattern expectedWordPattern = Pattern.compile("([^\\s]+)(\\s)?");		// Tokenize by spaces
@@ -260,7 +281,12 @@ public class SentencesTest{
 	
 
 				Sentences sentences = new Sentences();
-				results = sentences.parseSentence(sentence);
+				try {
+					results = sentences.parseSentence(sentence);
+				}
+				catch(NotSingleSentenceException notSingleSentenceException){
+					notSingleSentenceException.printStackTrace();
+				}
 
 
 				Integer sentenceLength = (Integer)results.get("Length");
@@ -297,7 +323,7 @@ public class SentencesTest{
 
 
 
-				Map<String, Object> results;
+				Map<String, Object> results = null;
 
 
 				Pattern expectedWordPattern = Pattern.compile("([^\\s]+)(\\s)?");		// Tokenize by spaces
@@ -313,7 +339,12 @@ public class SentencesTest{
 	
 
 				Sentences sentences = new Sentences();
-				results = sentences.parseSentence(sentence);
+				try {
+					results = sentences.parseSentence(sentence);
+				}
+				catch(NotSingleSentenceException notSingleSentenceException){
+					notSingleSentenceException.printStackTrace();
+				}
 
 
 				Integer sentenceLength = (Integer)results.get("Length");
@@ -352,7 +383,7 @@ public class SentencesTest{
 
 
 
-				Map<String, Object> results;
+				Map<String, Object> results = null;
 
 
 				Pattern expectedWordPattern = Pattern.compile("([^\\s]+)(\\s)?");		// Tokenize by spaces
@@ -368,7 +399,12 @@ public class SentencesTest{
 	
 
 				Sentences sentences = new Sentences();
-				results = sentences.parseSentence(sentence);
+				try {
+					results = sentences.parseSentence(sentence);
+				}
+				catch(NotSingleSentenceException notSingleSentenceException){
+					notSingleSentenceException.printStackTrace();
+				}
 
 
 				Integer sentenceLength = (Integer)results.get("Length");
@@ -412,7 +448,7 @@ public class SentencesTest{
 
 
 
-				Map<String, Object> results;
+				Map<String, Object> results = null;
 
 
 				Pattern expectedWordPattern = Pattern.compile("([^\\s]+)(\\s)?");		// Tokenize by spaces
@@ -428,7 +464,12 @@ public class SentencesTest{
 	
 
 				Sentences sentences = new Sentences();
-				results = sentences.parseSentence(sentence);
+				try {
+					results = sentences.parseSentence(sentence);
+				}
+				catch(NotSingleSentenceException notSingleSentenceException){
+					notSingleSentenceException.printStackTrace();
+				}
 
 
 				Integer sentenceLength = (Integer)results.get("Length");
@@ -462,7 +503,7 @@ public class SentencesTest{
 			@Tag ("Unit")
 			public void matchFollowedByEllipsesTest(String sentence, int expectedLength, String longestWord){		
 
-				Map<String, Object> results;
+				Map<String, Object> results = null;
 
 
 				Pattern expectedWordPattern = Pattern.compile("([^\\s]+)(\\s)?");		// Tokenize by spaces
@@ -478,7 +519,12 @@ public class SentencesTest{
 	
 
 				Sentences sentences = new Sentences();
-				results = sentences.parseSentence(sentence);
+				try {
+					results = sentences.parseSentence(sentence);
+				}
+				catch(NotSingleSentenceException notSingleSentenceException){
+					notSingleSentenceException.printStackTrace();
+				}
 
 
 				Integer sentenceLength = (Integer)results.get("Length");
@@ -507,7 +553,7 @@ public class SentencesTest{
 			@Tag ("Unit")
 			public void matchPrecededByEllipsesTest(String sentence, int expectedLength, String longestWord){		
 
-				Map<String, Object> results;
+				Map<String, Object> results = null;
 
 
 				Pattern expectedWordPattern = Pattern.compile("([^\\s]+)(\\s)?");		// Tokenize by spaces
@@ -523,7 +569,12 @@ public class SentencesTest{
 	
 
 				Sentences sentences = new Sentences();
-				results = sentences.parseSentence(sentence);
+				try {
+					results = sentences.parseSentence(sentence);
+				}
+				catch(NotSingleSentenceException notSingleSentenceException){
+					notSingleSentenceException.printStackTrace();
+				}
 
 
 				Integer sentenceLength = (Integer)results.get("Length");
@@ -552,7 +603,7 @@ public class SentencesTest{
 			@Tag ("Unit")
 			public void ellipsesNotIncludedTest(String sentence, int expectedLength, String longestWord){		
 
-				Map<String, Object> results;
+				Map<String, Object> results = null;
 
 
 				Pattern expectedWordPattern = Pattern.compile("([^\\s]+)(\\s)?");		// Tokenize by spaces
@@ -568,7 +619,12 @@ public class SentencesTest{
 	
 
 				Sentences sentences = new Sentences();
-				results = sentences.parseSentence(sentence);
+				try {
+					results = sentences.parseSentence(sentence);
+				}
+				catch(NotSingleSentenceException notSingleSentenceException){
+					notSingleSentenceException.printStackTrace();
+				}
 
 
 				Integer sentenceLength = (Integer)results.get("Length");
@@ -599,6 +655,50 @@ public class SentencesTest{
 
 		}
 
+	}
+
+	@Nested
+	public class SentenceTests{
+
+		@Nested
+		public class MultipleSentenceTests{
+	
+			@ParameterizedTest
+			@CsvFileSource(resources = "/Sentence/Multiple sentence/Cannot parse words when more than one sentence is provided.csv") 
+			@DisplayName ("Cannot parse words when more than one sentence is provided")
+			@Tag ("Unit")
+			public void multipleSentenceExceptionTest(String sentence, int expectedLength, String longestWord){		
+
+				Map<String, Object> results = null;
+
+
+				Pattern expectedWordPattern = Pattern.compile("([^\\s]+)(\\s)?");		// Tokenize by spaces
+				Matcher expectedWordMatcher = expectedWordPattern.matcher(longestWord);
+
+
+				List expectedLongestWords = new ArrayList<String>();
+
+				while (expectedWordMatcher.find()){		// Parse expectedLongestWords arguments into ArrayList
+					String expectedWordMatch = expectedWordMatcher.group(1);
+					expectedLongestWords.add(expectedWordMatch);
+				}
+	
+
+				Sentences sentences = new Sentences();
+
+				Throwable notSingleSentenceException = assertThrows(Sentences.NotSingleSentenceException.class, ()-> {
+					//try {
+						sentences.parseSentence(sentence);
+					//}catch(Exception e){
+					//	throw new Sentences.NotSingleSentenceException("Multiple sentences were provided.");
+					//}				
+				});
+				assertEquals("Multiple sentences were provided.", notSingleSentenceException.getMessage());
+
+				
+			}
+
+		}
 	}
 
 
