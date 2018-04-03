@@ -661,43 +661,6 @@ public class SentencesTest{
 	public class SentenceTests{
 
 		@Nested
-		public class MultipleSentenceTests{
-	
-			@ParameterizedTest
-			@CsvFileSource(resources = "/Sentence/Multiple sentence/Cannot parse words when more than one sentence is provided.csv") 
-			@DisplayName ("Cannot parse words when more than one sentence is provided")
-			@Tag ("Unit")
-			public void multipleSentenceExceptionTest(String sentence, int expectedLength, String longestWord){		
-
-				Map<String, Object> results = null;
-
-
-				Pattern expectedWordPattern = Pattern.compile("([^\\s]+)(\\s)?");		// Tokenize by spaces
-				Matcher expectedWordMatcher = expectedWordPattern.matcher(longestWord);
-
-
-				List expectedLongestWords = new ArrayList<String>();
-
-				while (expectedWordMatcher.find()){		// Parse expectedLongestWords arguments into ArrayList
-					String expectedWordMatch = expectedWordMatcher.group(1);
-					expectedLongestWords.add(expectedWordMatch);
-				}
-	
-
-				Sentences sentences = new Sentences();
-
-				Throwable notSingleSentenceException = assertThrows(Sentences.NotSingleSentenceException.class, ()-> {
-					sentences.parseSentence(sentence);			
-				});
-
-				assertEquals("Multiple sentences were provided.", notSingleSentenceException.getMessage());
-
-				
-			}
-
-		}
-
-		@Nested
 		public class SingleSentencesTests{
 	
 					
@@ -755,8 +718,165 @@ public class SentencesTest{
 
 		}
 
+		@Nested
+		public class MultipleSentenceTests{
+	
+			@ParameterizedTest
+			@CsvFileSource(resources = "/Sentence/Multiple sentence/Cannot parse words when more than one sentence is provided.csv") 
+			@DisplayName ("Cannot parse words when more than one sentence is provided")
+			@Tag ("Unit")
+			public void multipleSentenceExceptionTest(String sentence, int expectedLength, String longestWord){		
+
+				Map<String, Object> results = null;
+
+
+				Pattern expectedWordPattern = Pattern.compile("([^\\s]+)(\\s)?");		// Tokenize by spaces
+				Matcher expectedWordMatcher = expectedWordPattern.matcher(longestWord);
+
+
+				List expectedLongestWords = new ArrayList<String>();
+
+				while (expectedWordMatcher.find()){		// Parse expectedLongestWords arguments into ArrayList
+					String expectedWordMatch = expectedWordMatcher.group(1);
+					expectedLongestWords.add(expectedWordMatch);
+				}
+	
+
+				Sentences sentences = new Sentences();
+
+				Throwable notSingleSentenceException = assertThrows(Sentences.NotSingleSentenceException.class, ()-> {
+					sentences.parseSentence(sentence);			
+				});
+
+				assertEquals("Multiple sentences were provided.", notSingleSentenceException.getMessage());
+
+				
+			}
+
+		}
+
+
+		@Nested
+		public class NoSentencePunctuationTests{
+	
+					
+			@ParameterizedTest
+			@CsvFileSource(resources = "/Sentence/No sentence punctuation/Verify the proper word count and longest word is returned even when no sentence punctuation is present.csv") 
+			@DisplayName ("Verify the proper word count and longest word is returned even when no sentence punctuation is present")
+			@Tag ("Unit")
+			public void noSentencePunctuationMatchTest(String sentence, int expectedLength, String longestWord){		
+
+				Map<String, Object> results = null;
+
+
+				Pattern expectedWordPattern = Pattern.compile("([^\\s]+)(\\s)?");		// Tokenize by spaces
+				Matcher expectedWordMatcher = expectedWordPattern.matcher(longestWord);
+
+
+				List expectedLongestWords = new ArrayList<String>();
+
+				while (expectedWordMatcher.find()){		// Parse expectedLongestWords arguments into ArrayList
+					String expectedWordMatch = expectedWordMatcher.group(1);
+					expectedLongestWords.add(expectedWordMatch);
+				}
+	
+
+				Sentences sentences = new Sentences();
+				try {
+					results = sentences.parseSentence(sentence);
+				}
+				catch(NotSingleSentenceException notSingleSentenceException){
+					notSingleSentenceException.printStackTrace();
+				}
+
+
+				Integer sentenceLength = (Integer)results.get("Length");
+				List longestWords = (ArrayList<?>)results.get("Longest Words");
+				
+		
+
+				assertEquals(longestWords.size(), expectedLongestWords.size());
+
+				for (String expectedWord :  (ArrayList<String>)expectedLongestWords){
+
+					long sameWordCount = ((ArrayList<String>)longestWords).stream()
+								.filter((String returnedWord)->{
+									return expectedWord.equals(returnedWord);
+								})
+								.count();
+					assertEquals(sameWordCount, 1);					// Only one match, no more.
+				}
+		
+
+				assertEquals(sentenceLength, Integer.valueOf(expectedLength));
+			}
+
+		}
+
+
 	}
 
+	@Nested
+	public class LengthTests{
+
+		@Nested
+		public class MultipleLongestWordsTests{
+	
+					
+			@ParameterizedTest
+			@CsvFileSource(resources = "/Length/Multiple longest words/Verify multiple longest words are returned when they are the same length.csv") 
+			@DisplayName ("Verify multiple longest words are returned when they are the same length")
+			@Tag ("Unit")
+			public void multipleLongestWordsMatchTest(String sentence, int expectedLength, String longestWord){		
+
+				Map<String, Object> results = null;
+
+
+				Pattern expectedWordPattern = Pattern.compile("([^\\s]+)(\\s)?");		// Tokenize by spaces
+				Matcher expectedWordMatcher = expectedWordPattern.matcher(longestWord);
+
+
+				List expectedLongestWords = new ArrayList<String>();
+
+				while (expectedWordMatcher.find()){		// Parse expectedLongestWords arguments into ArrayList
+					String expectedWordMatch = expectedWordMatcher.group(1);
+					expectedLongestWords.add(expectedWordMatch);
+				}
+	
+
+				Sentences sentences = new Sentences();
+				try {
+					results = sentences.parseSentence(sentence);
+				}
+				catch(NotSingleSentenceException notSingleSentenceException){
+					notSingleSentenceException.printStackTrace();
+				}
+
+
+				Integer sentenceLength = (Integer)results.get("Length");
+				List longestWords = (ArrayList<?>)results.get("Longest Words");
+				
+		
+
+				assertEquals(longestWords.size(), expectedLongestWords.size());
+
+				for (String expectedWord :  (ArrayList<String>)expectedLongestWords){
+
+					long sameWordCount = ((ArrayList<String>)longestWords).stream()
+								.filter((String returnedWord)->{
+									return expectedWord.equals(returnedWord);
+								})
+								.count();
+					assertEquals(sameWordCount, 1);					// Only one match, no more.
+				}
+		
+
+				assertEquals(sentenceLength, Integer.valueOf(expectedLength));
+			}
+
+		}
+
+	}
 
 
 }
