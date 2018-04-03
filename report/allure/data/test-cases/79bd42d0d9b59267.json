@@ -1,0 +1,42 @@
+{
+  "uid" : "79bd42d0d9b59267",
+  "name" : "multipleLongestWordsMatchTest(String, int, String)[3]",
+  "historyId" : "JUnit Jupiter:sentences.SentencesTest$LengthTests$MultipleLongestWordsTests#multipleLongestWordsMatchTest(String, int, String)[3]",
+  "time" : {
+    "start" : 1522723431,
+    "stop" : 1522723431,
+    "duration" : 0
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "resultFormat",
+    "value" : "junit"
+  }, {
+    "name" : "suite",
+    "value" : "JUnit Jupiter"
+  }, {
+    "name" : "host",
+    "value" : "PC"
+  }, {
+    "name" : "testClass",
+    "value" : "sentences.SentencesTest$LengthTests$MultipleLongestWordsTests"
+  }, {
+    "name" : "package",
+    "value" : "sentences.SentencesTest$LengthTests$MultipleLongestWordsTests"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "79bd42d0d9b59267.json",
+  "parameterValues" : [ ]
+}

@@ -1,0 +1,42 @@
+{
+  "uid" : "57c8d16b5e7ca99b",
+  "name" : "multipleSentenceExceptionTest(String, int, String)[2]",
+  "historyId" : "JUnit Jupiter:sentences.SentencesTest$SentenceTests$MultipleSentenceTests#multipleSentenceExceptionTest(String, int, String)[2]",
+  "time" : {
+    "start" : 1522723431,
+    "stop" : 1522723431,
+    "duration" : 0
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "resultFormat",
+    "value" : "junit"
+  }, {
+    "name" : "suite",
+    "value" : "JUnit Jupiter"
+  }, {
+    "name" : "host",
+    "value" : "PC"
+  }, {
+    "name" : "testClass",
+    "value" : "sentences.SentencesTest$SentenceTests$MultipleSentenceTests"
+  }, {
+    "name" : "package",
+    "value" : "sentences.SentencesTest$SentenceTests$MultipleSentenceTests"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "57c8d16b5e7ca99b.json",
+  "parameterValues" : [ ]
+}

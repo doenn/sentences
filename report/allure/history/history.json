@@ -1,0 +1,439 @@
+{
+  "JUnit Jupiter:sentences.SentencesTest$PunctuationTests$CommasEllipsesTests#ellipsesNotIncludedTest(String, int, String)[1]" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "cc82887cbe28195b",
+      "status" : "passed",
+      "time" : {
+        "start" : 1522723431,
+        "stop" : 1522723431,
+        "duration" : 0
+      }
+    } ]
+  },
+  "JUnit Jupiter:sentences.SentencesTest$PunctuationTests$CommasEllipsesTests#commasNotIncludedOneMatchTest()" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "c6bc546cf0feb612",
+      "status" : "passed",
+      "time" : {
+        "start" : 1522723431,
+        "stop" : 1522723431,
+        "duration" : 0
+      }
+    } ]
+  },
+  "JUnit Jupiter:sentences.SentencesTest$LengthTests$MultipleLongestWordsTests#multipleLongestWordsMatchTest(String, int, String)[2]" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "1359518c5c141b7f",
+      "status" : "passed",
+      "time" : {
+        "start" : 1522723431,
+        "stop" : 1522723431,
+        "duration" : 0
+      }
+    } ]
+  },
+  "JUnit Jupiter:sentences.SentencesTest$LengthTests$MultipleLongestWordsTests#multipleLongestWordsMatchTest(String, int, String)[3]" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "79bd42d0d9b59267",
+      "status" : "passed",
+      "time" : {
+        "start" : 1522723431,
+        "stop" : 1522723431,
+        "duration" : 0
+      }
+    } ]
+  },
+  "JUnit Jupiter:sentences.SentencesTest$SentenceTests$MultipleSentenceTests#multipleSentenceExceptionTest(String, int, String)[1]" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "2a3adb41ff13cab7",
+      "status" : "passed",
+      "time" : {
+        "start" : 1522723431,
+        "stop" : 1522723431,
+        "duration" : 0
+      }
+    } ]
+  },
+  "JUnit Jupiter:sentences.SentencesTest$PunctuationTests$CommasEllipsesTests#wordsMatchedWithCommasOneMatchTest()" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "7409dc876eb865f0",
+      "status" : "passed",
+      "time" : {
+        "start" : 1522723431,
+        "stop" : 1522723431,
+        "duration" : 0
+      }
+    } ]
+  },
+  "JUnit Jupiter:sentences.SentencesTest$LengthTests$MultipleLongestWordsTests#multipleLongestWordsMatchTest(String, int, String)[1]" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "f4620767fa1df680",
+      "status" : "passed",
+      "time" : {
+        "start" : 1522723431,
+        "stop" : 1522723468,
+        "duration" : 37
+      }
+    } ]
+  },
+  "JUnit Jupiter:sentences.SentencesTest$SentenceTests$MultipleSentenceTests#multipleSentenceExceptionTest(String, int, String)[2]" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "57c8d16b5e7ca99b",
+      "status" : "passed",
+      "time" : {
+        "start" : 1522723431,
+        "stop" : 1522723431,
+        "duration" : 0
+      }
+    } ]
+  },
+  "JUnit Jupiter:sentences.SentencesTest$SentenceTests$SingleSentencesTests#singleSentenceMatchTest(String, int, String)[1]" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "ba2267a5b205568c",
+      "status" : "passed",
+      "time" : {
+        "start" : 1522723431,
+        "stop" : 1522723431,
+        "duration" : 0
+      }
+    } ]
+  },
+  "JUnit Jupiter:sentences.SentencesTest$PunctuationTests$CommasEllipsesTests#wordsMatchedWithCommasMultipleMatchTest()" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "19235f2a12cb71f0",
+      "status" : "passed",
+      "time" : {
+        "start" : 1522723431,
+        "stop" : 1522723431,
+        "duration" : 0
+      }
+    } ]
+  },
+  "JUnit Jupiter:sentences.SentencesTest$WordTests#matchAnyCaseTest(String, int, String)[1]" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "db921063b6fbc1e5",
+      "status" : "passed",
+      "time" : {
+        "start" : 1522723431,
+        "stop" : 1522723431,
+        "duration" : 0
+      }
+    } ]
+  },
+  "JUnit Jupiter:sentences.SentencesTest$WordTests#matchAnyCaseTest(String, int, String)[2]" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "35dcd30f7678f6e2",
+      "status" : "passed",
+      "time" : {
+        "start" : 1522723431,
+        "stop" : 1522723431,
+        "duration" : 0
+      }
+    } ]
+  },
+  "JUnit Jupiter:sentences.SentencesTest$PunctuationTests$CommasEllipsesTests#commasNotIncludedMultipleMatchTest()" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "4a2538c67ce6830f",
+      "status" : "passed",
+      "time" : {
+        "start" : 1522723431,
+        "stop" : 1522723431,
+        "duration" : 0
+      }
+    } ]
+  },
+  "JUnit Jupiter:sentences.SentencesTest$WordTests#matchOnlyCapsTest(String, int, String)[1]" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "713e1c84a4baa4de",
+      "status" : "passed",
+      "time" : {
+        "start" : 1522723431,
+        "stop" : 1522723446,
+        "duration" : 15
+      }
+    } ]
+  },
+  "JUnit Jupiter:sentences.SentencesTest$SentenceTests$NoSentencePunctuationTests#noSentencePunctuationMatchTest(String, int, String)[2]" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "db6fd78a7a874bd9",
+      "status" : "passed",
+      "time" : {
+        "start" : 1522723431,
+        "stop" : 1522723431,
+        "duration" : 0
+      }
+    } ]
+  },
+  "JUnit Jupiter:sentences.SentencesTest$SentenceTests$NoSentencePunctuationTests#noSentencePunctuationMatchTest(String, int, String)[1]" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "1c56972eb709569d",
+      "status" : "passed",
+      "time" : {
+        "start" : 1522723431,
+        "stop" : 1522723431,
+        "duration" : 0
+      }
+    } ]
+  },
+  "JUnit Jupiter:sentences.SentencesTest$WordTests#matchOnlyCapsTest(String, int, String)[2]" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "d5e265bf264fc8e5",
+      "status" : "passed",
+      "time" : {
+        "start" : 1522723431,
+        "stop" : 1522723431,
+        "duration" : 0
+      }
+    } ]
+  },
+  "JUnit Jupiter:sentences.SentencesTest$PunctuationTests$PeriodsTests#periodsNotIncludedTest(String, int, String)[1]" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "a1fc70a65523a351",
+      "status" : "passed",
+      "time" : {
+        "start" : 1522723431,
+        "stop" : 1522723431,
+        "duration" : 0
+      }
+    } ]
+  },
+  "JUnit Jupiter:sentences.SentencesTest$PunctuationTests$CommasEllipsesTests#matchFollowedByEllipsesTest(String, int, String)[1]" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "b580967144de5c53",
+      "status" : "passed",
+      "time" : {
+        "start" : 1522723431,
+        "stop" : 1522723431,
+        "duration" : 0
+      }
+    } ]
+  },
+  "JUnit Jupiter:sentences.SentencesTest$SpacesTests#variableSpaceCountTest(String, int, String)[1]" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "af1ed1c988ea815b",
+      "status" : "passed",
+      "time" : {
+        "start" : 1522723431,
+        "stop" : 1522723431,
+        "duration" : 0
+      }
+    } ]
+  },
+  "JUnit Jupiter:sentences.SentencesTest$SentenceTests$NoSentencePunctuationTests#noSentencePunctuationMatchTest(String, int, String)[3]" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "d6a01591a2ca1782",
+      "status" : "passed",
+      "time" : {
+        "start" : 1522723431,
+        "stop" : 1522723431,
+        "duration" : 0
+      }
+    } ]
+  },
+  "JUnit Jupiter:sentences.SentencesTest$SpacesTests#variableSpaceCountTest(String, int, String)[2]" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "29ab9271f26b8ec7",
+      "status" : "passed",
+      "time" : {
+        "start" : 1522723431,
+        "stop" : 1522723431,
+        "duration" : 0
+      }
+    } ]
+  },
+  "JUnit Jupiter:sentences.SentencesTest$PunctuationTests$CommasEllipsesTests#matchPrecededByEllipsesTest(String, int, String)[1]" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "52306e311c88fe3a",
+      "status" : "passed",
+      "time" : {
+        "start" : 1522723431,
+        "stop" : 1522723431,
+        "duration" : 0
+      }
+    } ]
+  }
+}

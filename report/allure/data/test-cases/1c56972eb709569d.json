@@ -1,0 +1,42 @@
+{
+  "uid" : "1c56972eb709569d",
+  "name" : "noSentencePunctuationMatchTest(String, int, String)[1]",
+  "historyId" : "JUnit Jupiter:sentences.SentencesTest$SentenceTests$NoSentencePunctuationTests#noSentencePunctuationMatchTest(String, int, String)[1]",
+  "time" : {
+    "start" : 1522723431,
+    "stop" : 1522723431,
+    "duration" : 0
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "resultFormat",
+    "value" : "junit"
+  }, {
+    "name" : "suite",
+    "value" : "JUnit Jupiter"
+  }, {
+    "name" : "host",
+    "value" : "PC"
+  }, {
+    "name" : "testClass",
+    "value" : "sentences.SentencesTest$SentenceTests$NoSentencePunctuationTests"
+  }, {
+    "name" : "package",
+    "value" : "sentences.SentencesTest$SentenceTests$NoSentencePunctuationTests"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "1c56972eb709569d.json",
+  "parameterValues" : [ ]
+}

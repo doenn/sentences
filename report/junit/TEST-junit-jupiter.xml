@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="JUnit Jupiter" tests="23" skipped="0" failures="0" errors="0" time="0.3" hostname="PC" timestamp="2018-04-02T22:43:51">
+<properties>
+<property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
+<property name="file.encoding" value="Cp1252"/>
+<property name="file.encoding.pkg" value="sun.io"/>
+<property name="file.separator" value="\"/>
+<property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+<property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
+<property name="java.class.path" value="../../../junit-platform-console-standalone-1.1.0.jar"/>
+<property name="java.class.version" value="54.0"/>
+<property name="java.home" value="C:\Program Files\Java\jdk-10"/>
+<property name="java.io.tmpdir" value="C:\Users\Lewis\AppData\Local\Temp\"/>
+<property name="java.library.path" value="C:\Program Files\Java\jdk-10\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\Java\jdk-10\bin;C:\Perl64\site\bin;C:\Perl64\bin;C:\Program Files (x86)\Python36-32\Scripts\;C:\Program Files (x86)\Python36-32\;C:\VulkanSDK\1.0.26.0\Bin;C:\VulkanSDK\1.0.39.1\Bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\Microsoft SQL Server\110\Tools\Binn\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files (x86)\AMD APP SDK\3.0\bin\x86_64;C:\Program Files (x86)\AMD APP SDK\3.0\bin\x86;C:\Program Files (x86)\CMake\bin;C:\MinGW\bin;C:\Program Files\OpenVPN\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\metasploit-framework\bin\;C:\Program Files\kotlin-compiler-1.2.21\kotlinc\bin;C:\Program Files\nodejs\;C:\Program Files\vert.x\vert.x-3.5.0-full\vertx\bin;C:\Program Files\Apache\Maven\apache-maven-3.5.2\bin;C:\Program Files\MySQL\MySQL Utilities 1.6\;C:\Program Files\Git\cmd;;."/>
+<property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+<property name="java.runtime.version" value="10+46"/>
+<property name="java.specification.name" value="Java Platform API Specification"/>
+<property name="java.specification.vendor" value="Oracle Corporation"/>
+<property name="java.specification.version" value="10"/>
+<property name="java.vendor" value="Oracle Corporation"/>
+<property name="java.vendor.url" value="http://java.oracle.com/"/>
+<property name="java.vendor.url.bug" value="http://bugreport.java.com/bugreport/"/>
+<property name="java.vendor.version" value="18.3"/>
+<property name="java.version" value="10"/>
+<property name="java.version.date" value="2018-03-20"/>
+<property name="java.vm.compressedOopsMode" value="Zero based"/>
+<property name="java.vm.info" value="mixed mode"/>
+<property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+<property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+<property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+<property name="java.vm.specification.version" value="10"/>
+<property name="java.vm.vendor" value="&quot;Oracle Corporation&quot;"/>
+<property name="java.vm.version" value="10+46"/>
+<property name="jdk.debug" value="release"/>
+<property name="line.separator" value="
+"/>
+<property name="os.arch" value="amd64"/>
+<property name="os.name" value="Windows 10"/>
+<property name="os.version" value="10.0"/>
+<property name="path.separator" value=";"/>
+<property name="sun.arch.data.model" value="64"/>
+<property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-10\bin"/>
+<property name="sun.cpu.endian" value="little"/>
+<property name="sun.cpu.isalist" value="amd64"/>
+<property name="sun.desktop" value="windows"/>
+<property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+<property name="sun.java.command" value="../../../junit-platform-console-standalone-1.1.0.jar --reports-dir ../../../report/junit --cp sentences;../../main/java;../resources;. --select-class sentences.SentencesTest"/>
+<property name="sun.java.launcher" value="SUN_STANDARD"/>
+<property name="sun.jnu.encoding" value="Cp1252"/>
+<property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+<property name="sun.os.patch.level" value=""/>
+<property name="sun.stderr.encoding" value="cp437"/>
+<property name="sun.stdout.encoding" value="cp437"/>
+<property name="user.country" value="US"/>
+<property name="user.dir" value="C:\Users\Lewis\sentences\src\test\java"/>
+<property name="user.home" value="C:\Users\Lewis"/>
+<property name="user.language" value="en"/>
+<property name="user.name" value="Lewis"/>
+<property name="user.script" value=""/>
+<property name="user.timezone" value="America/New_York"/>
+<property name="user.variant" value=""/>
+</properties>
+<testcase name="multipleLongestWordsMatchTest(String, int, String)[1]" classname="sentences.SentencesTest$LengthTests$MultipleLongestWordsTests" time="0.037">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:sentences.SentencesTest]/[nested-class:LengthTests]/[nested-class:MultipleLongestWordsTests]/[test-template:multipleLongestWordsMatchTest(java.lang.String, int, java.lang.String)]/[test-template-invocation:#1]
+display-name: [1] I can ride a bike., 5, ride bike
+]]></system-out>
+</testcase>
+<testcase name="multipleLongestWordsMatchTest(String, int, String)[2]" classname="sentences.SentencesTest$LengthTests$MultipleLongestWordsTests" time="0">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:sentences.SentencesTest]/[nested-class:LengthTests]/[nested-class:MultipleLongestWordsTests]/[test-template:multipleLongestWordsMatchTest(java.lang.String, int, java.lang.String)]/[test-template-invocation:#2]
+display-name: [2] Do not tie your shoes today., 6, shoes today
+]]></system-out>
+</testcase>
+<testcase name="multipleLongestWordsMatchTest(String, int, String)[3]" classname="sentences.SentencesTest$LengthTests$MultipleLongestWordsTests" time="0">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:sentences.SentencesTest]/[nested-class:LengthTests]/[nested-class:MultipleLongestWordsTests]/[test-template:multipleLongestWordsMatchTest(java.lang.String, int, java.lang.String)]/[test-template-invocation:#3]
+display-name: [3] Clean your room or I will get very angry., 9, Clean angry
+]]></system-out>
+</testcase>
+<testcase name="noSentencePunctuationMatchTest(String, int, String)[1]" classname="sentences.SentencesTest$SentenceTests$NoSentencePunctuationTests" time="0">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:sentences.SentencesTest]/[nested-class:SentenceTests]/[nested-class:NoSentencePunctuationTests]/[test-template:noSentencePunctuationMatchTest(java.lang.String, int, java.lang.String)]/[test-template-invocation:#1]
+display-name: [1] We tried to swim near the lake, 7, tried
+]]></system-out>
+</testcase>
+<testcase name="noSentencePunctuationMatchTest(String, int, String)[2]" classname="sentences.SentencesTest$SentenceTests$NoSentencePunctuationTests" time="0">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:sentences.SentencesTest]/[nested-class:SentenceTests]/[nested-class:NoSentencePunctuationTests]/[test-template:noSentencePunctuationMatchTest(java.lang.String, int, java.lang.String)]/[test-template-invocation:#2]
+display-name: [2] We tried to swim near the lake and found a snake, 11, tried found snake
+]]></system-out>
+</testcase>
+<testcase name="noSentencePunctuationMatchTest(String, int, String)[3]" classname="sentences.SentencesTest$SentenceTests$NoSentencePunctuationTests" time="0">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:sentences.SentencesTest]/[nested-class:SentenceTests]/[nested-class:NoSentencePunctuationTests]/[test-template:noSentencePunctuationMatchTest(java.lang.String, int, java.lang.String)]/[test-template-invocation:#3]
+display-name: [3] We tried to swim near the lake We went home, 10, tried
+]]></system-out>
+</testcase>
+<testcase name="multipleSentenceExceptionTest(String, int, String)[1]" classname="sentences.SentencesTest$SentenceTests$MultipleSentenceTests" time="0">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:sentences.SentencesTest]/[nested-class:SentenceTests]/[nested-class:MultipleSentenceTests]/[test-template:multipleSentenceExceptionTest(java.lang.String, int, java.lang.String)]/[test-template-invocation:#1]
+display-name: [1] I woke up. I went for a jog., 8, woke went
+]]></system-out>
+</testcase>
+<testcase name="multipleSentenceExceptionTest(String, int, String)[2]" classname="sentences.SentencesTest$SentenceTests$MultipleSentenceTests" time="0">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:sentences.SentencesTest]/[nested-class:SentenceTests]/[nested-class:MultipleSentenceTests]/[test-template:multipleSentenceExceptionTest(java.lang.String, int, java.lang.String)]/[test-template-invocation:#2]
+display-name: [2] I woke up! I went for a jog!, 8, woke went
+]]></system-out>
+</testcase>
+<testcase name="singleSentenceMatchTest(String, int, String)[1]" classname="sentences.SentencesTest$SentenceTests$SingleSentencesTests" time="0">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:sentences.SentencesTest]/[nested-class:SentenceTests]/[nested-class:SingleSentencesTests]/[test-template:singleSentenceMatchTest(java.lang.String, int, java.lang.String)]/[test-template-invocation:#1]
+display-name: [1] We tried to swim near the lake., 7, tried
+]]></system-out>
+</testcase>
+<testcase name="wordsMatchedWithCommasMultipleMatchTest()" classname="sentences.SentencesTest$PunctuationTests$CommasEllipsesTests" time="0">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:sentences.SentencesTest]/[nested-class:PunctuationTests]/[nested-class:CommasEllipsesTests]/[method:wordsMatchedWithCommasMultipleMatchTest()]
+display-name: Verify words are matched even when they are followed by commas - Multiple Match
+]]></system-out>
+</testcase>
+<testcase name="wordsMatchedWithCommasOneMatchTest()" classname="sentences.SentencesTest$PunctuationTests$CommasEllipsesTests" time="0">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:sentences.SentencesTest]/[nested-class:PunctuationTests]/[nested-class:CommasEllipsesTests]/[method:wordsMatchedWithCommasOneMatchTest()]
+display-name: Verify words are matched even when they are followed by commas One Match
+]]></system-out>
+</testcase>
+<testcase name="commasNotIncludedOneMatchTest()" classname="sentences.SentencesTest$PunctuationTests$CommasEllipsesTests" time="0">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:sentences.SentencesTest]/[nested-class:PunctuationTests]/[nested-class:CommasEllipsesTests]/[method:commasNotIncludedOneMatchTest()]
+display-name: Verify words are matched when followed by commas but the commas are not matched - one match
+]]></system-out>
+</testcase>
+<testcase name="commasNotIncludedMultipleMatchTest()" classname="sentences.SentencesTest$PunctuationTests$CommasEllipsesTests" time="0">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:sentences.SentencesTest]/[nested-class:PunctuationTests]/[nested-class:CommasEllipsesTests]/[method:commasNotIncludedMultipleMatchTest()]
+display-name: Verify words are matched when followed by commas but the commas are not matched - Multiple match
+]]></system-out>
+</testcase>
+<testcase name="matchFollowedByEllipsesTest(String, int, String)[1]" classname="sentences.SentencesTest$PunctuationTests$CommasEllipsesTests" time="0">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:sentences.SentencesTest]/[nested-class:PunctuationTests]/[nested-class:CommasEllipsesTests]/[test-template:matchFollowedByEllipsesTest(java.lang.String, int, java.lang.String)]/[test-template-invocation:#1]
+display-name: [1] We visited the lake... and came back the next day., 10, visited
+]]></system-out>
+</testcase>
+<testcase name="matchPrecededByEllipsesTest(String, int, String)[1]" classname="sentences.SentencesTest$PunctuationTests$CommasEllipsesTests" time="0">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:sentences.SentencesTest]/[nested-class:PunctuationTests]/[nested-class:CommasEllipsesTests]/[test-template:matchPrecededByEllipsesTest(java.lang.String, int, java.lang.String)]/[test-template-invocation:#1]
+display-name: [1] We visited the lake... and came back to Washington DC the next day., 13, Washington
+]]></system-out>
+</testcase>
+<testcase name="ellipsesNotIncludedTest(String, int, String)[1]" classname="sentences.SentencesTest$PunctuationTests$CommasEllipsesTests" time="0">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:sentences.SentencesTest]/[nested-class:PunctuationTests]/[nested-class:CommasEllipsesTests]/[test-template:ellipsesNotIncludedTest(java.lang.String, int, java.lang.String)]/[test-template-invocation:#1]
+display-name: [1] We visited lake Michigan... and came back the next day., 10, Michigan
+]]></system-out>
+</testcase>
+<testcase name="periodsNotIncludedTest(String, int, String)[1]" classname="sentences.SentencesTest$PunctuationTests$PeriodsTests" time="0">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:sentences.SentencesTest]/[nested-class:PunctuationTests]/[nested-class:PeriodsTests]/[test-template:periodsNotIncludedTest(java.lang.String, int, java.lang.String)]/[test-template-invocation:#1]
+display-name: [1] I just came back from Iceland., 6, Iceland
+]]></system-out>
+</testcase>
+<testcase name="variableSpaceCountTest(String, int, String)[1]" classname="sentences.SentencesTest$SpacesTests" time="0">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:sentences.SentencesTest]/[nested-class:SpacesTests]/[test-template:variableSpaceCountTest(java.lang.String, int, java.lang.String)]/[test-template-invocation:#1]
+display-name: [1] The boy met an alligator in the swamp., 8, alligator
+]]></system-out>
+</testcase>
+<testcase name="variableSpaceCountTest(String, int, String)[2]" classname="sentences.SentencesTest$SpacesTests" time="0">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:sentences.SentencesTest]/[nested-class:SpacesTests]/[test-template:variableSpaceCountTest(java.lang.String, int, java.lang.String)]/[test-template-invocation:#2]
+display-name: [2] The boy met   an alligator   in the    swamp., 8, alligator
+]]></system-out>
+</testcase>
+<testcase name="matchAnyCaseTest(String, int, String)[1]" classname="sentences.SentencesTest$WordTests" time="0">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:sentences.SentencesTest]/[nested-class:WordTests]/[test-template:matchAnyCaseTest(java.lang.String, int, java.lang.String)]/[test-template-invocation:#1]
+display-name: [1] The boy met an alligator in the swamp., 8, alligator
+]]></system-out>
+</testcase>
+<testcase name="matchAnyCaseTest(String, int, String)[2]" classname="sentences.SentencesTest$WordTests" time="0">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:sentences.SentencesTest]/[nested-class:WordTests]/[test-template:matchAnyCaseTest(java.lang.String, int, java.lang.String)]/[test-template-invocation:#2]
+display-name: [2] I just came back from Iceland., 6, Iceland
+]]></system-out>
+</testcase>
+<testcase name="matchOnlyCapsTest(String, int, String)[1]" classname="sentences.SentencesTest$WordTests" time="0.015">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:sentences.SentencesTest]/[nested-class:WordTests]/[test-template:matchOnlyCapsTest(java.lang.String, int, java.lang.String)]/[test-template-invocation:#1]
+display-name: [1] I work for DARPA., 4, DARPA
+]]></system-out>
+</testcase>
+<testcase name="matchOnlyCapsTest(String, int, String)[2]" classname="sentences.SentencesTest$WordTests" time="0">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:sentences.SentencesTest]/[nested-class:WordTests]/[test-template:matchOnlyCapsTest(java.lang.String, int, java.lang.String)]/[test-template-invocation:#2]
+display-name: [2] He works for DARPA., 4, works DARPA
+]]></system-out>
+</testcase>
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]
+display-name: JUnit Jupiter
+]]></system-out>
+</testsuite>

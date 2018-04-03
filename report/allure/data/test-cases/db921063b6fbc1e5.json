@@ -1,0 +1,42 @@
+{
+  "uid" : "db921063b6fbc1e5",
+  "name" : "matchAnyCaseTest(String, int, String)[1]",
+  "historyId" : "JUnit Jupiter:sentences.SentencesTest$WordTests#matchAnyCaseTest(String, int, String)[1]",
+  "time" : {
+    "start" : 1522723431,
+    "stop" : 1522723431,
+    "duration" : 0
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "resultFormat",
+    "value" : "junit"
+  }, {
+    "name" : "suite",
+    "value" : "JUnit Jupiter"
+  }, {
+    "name" : "host",
+    "value" : "PC"
+  }, {
+    "name" : "testClass",
+    "value" : "sentences.SentencesTest$WordTests"
+  }, {
+    "name" : "package",
+    "value" : "sentences.SentencesTest$WordTests"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "db921063b6fbc1e5.json",
+  "parameterValues" : [ ]
+}

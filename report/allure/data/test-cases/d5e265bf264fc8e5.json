@@ -1,0 +1,42 @@
+{
+  "uid" : "d5e265bf264fc8e5",
+  "name" : "matchOnlyCapsTest(String, int, String)[2]",
+  "historyId" : "JUnit Jupiter:sentences.SentencesTest$WordTests#matchOnlyCapsTest(String, int, String)[2]",
+  "time" : {
+    "start" : 1522723431,
+    "stop" : 1522723431,
+    "duration" : 0
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "resultFormat",
+    "value" : "junit"
+  }, {
+    "name" : "suite",
+    "value" : "JUnit Jupiter"
+  }, {
+    "name" : "host",
+    "value" : "PC"
+  }, {
+    "name" : "testClass",
+    "value" : "sentences.SentencesTest$WordTests"
+  }, {
+    "name" : "package",
+    "value" : "sentences.SentencesTest$WordTests"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "d5e265bf264fc8e5.json",
+  "parameterValues" : [ ]
+}
